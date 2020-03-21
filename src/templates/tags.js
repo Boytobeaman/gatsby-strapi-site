@@ -1,28 +1,35 @@
 import 'core-js/es6/map';
 import 'core-js/es6/set';
-import React from "react";
+import React from "react"
 import { Link, graphql } from 'gatsby';
-import ProductDetailTemplateCat from '../../components/ProductDetailTemplateCat';
-import Layout from '../../components/Layout';
-import SEO from '../../components/SEO/SEO';
-import { menu } from '../../utils';
+import ProductDetailTemplateCat from '../components/ProductDetailTemplateCat';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO/SEO';
+import { menu } from '../utils';
 import Img from 'gatsby-image';
-import '../../cat-page-style.scss';
+import '../cat-page-style.scss';
 // need to change
-import ThisCatDesc from '../../components/productDesc/FoldingCrate';
-import AllProductCommonDesc from '../../components/productDesc/AllProductCommonDesc';
+
+import AllProductCommonDesc from '../components/productDesc/AllProductCommonDesc'
 
 
 
-const JSONbuildtime = ({data}) => {
+const JSONbuildtime = ({data, pageContext, path}) => {
 
   let posts = data.strapidata.edges;
-  let img_data = data.jsondata.edges;
+
+  let stackingCrateJsondata = data.stackingCrateJsondata.edges;
+  let foldingCrateJsondata = data.foldingCrateJsondata.edges;
+  let nestingBoxJsondata = data.nestingBoxJsondata.edges;
+  let palletBoxJsondata = data.palletBoxJsondata.edges;
+
+  let img_data = [...stackingCrateJsondata, ...foldingCrateJsondata, ...nestingBoxJsondata, ...palletBoxJsondata];
 
   // need to change, get banner data
   let bannerDesktop = data.bannerDesktop;
   let bannerPhone = data.bannerPhone;
 
+  debugger
   posts = posts.map(item=>item.node);
   img_data = img_data.map(item => item.node)
   posts.forEach(item => {
@@ -32,25 +39,24 @@ const JSONbuildtime = ({data}) => {
   		item.images = item.local_img.map(local_img_item=>local_img_item.path.childImageSharp)
   	}
   })
-  // for facebook url
-  let cat_link = posts[0].seo_category_slug
-  cat_link= `/${cat_link}/`
+
   // need to change
-  let cat_text = menu.foldingCrate.text
+  let cat_text = pageContext.tag
 
   let the_image = ``;
   if(posts[0].images[0] && posts[0].images[0].fluid){
     the_image = posts[0].images[0].fluid.src
   }
+  
 
   return (
       <Layout>
         <section className="section product-cate-page">
           <SEO 
             thisTitleTemplate={`%s | ${cat_text} for sale`}
-            title={`${cat_text}, cheap ${cat_text} for moving`}
-            description = {`Wholesale ${cat_text}, cheap ${cat_text} for sale, make your move as environmentally-friendly as possible`}
-            pathname = {`${cat_link}`}
+            title={`${cat_text}, cheap ${cat_text}, high quality ${cat_text} supplier`}
+            description = {`Wholesale ${cat_text}, cheap ${cat_text} for sale, high quality ${cat_text} supplier, Satisfaction Assured. Over 20 Years In Business`}
+            pathname = {path}
             image = {the_image}
             position = '2'
             ratingValue = '4.9'
@@ -71,21 +77,20 @@ const JSONbuildtime = ({data}) => {
               </ol>
             </nav>
             
-            <div className="cat-desc-top-wrap">
-                
+            {/* <div className="cat-desc-top-wrap">
               <div className="d-none d-sm-block cat-desc-top-img-wrap">
                 <Img
                   fluid={bannerDesktop.childImageSharp.fluid}
-                  alt='folding crates'
+                  alt='euro stacking boxes'
                 />
               </div>
               <div className="d-block d-sm-none cat-desc-top-img-wrap">
                 <Img
                   fluid={bannerPhone.childImageSharp.fluid}
-                  alt='folding crates'
+                  alt='euro stacking boxes'
                 />
               </div>
-            </div>
+            </div> */}
 
             {posts
               .map((post) => {
@@ -111,7 +116,6 @@ const JSONbuildtime = ({data}) => {
               })}
 
             <div className="cat-desc-section">
-              <ThisCatDesc />
               <AllProductCommonDesc />
             </div>
           </div>
@@ -123,8 +127,8 @@ export default JSONbuildtime
 
 // need to change domain and product_identify_cat
 export const query = graphql`
-  query{
-    strapidata: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "movingbox.cn"}}, product_identify_cat: {eq: "folding crate"}}) {
+  query($tag_regex: String!){
+    strapidata: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "movingbox.cn"}}, tags: {regex: $tag_regex}}) {
       edges {
         node {
           id
@@ -163,7 +167,7 @@ export const query = graphql`
         }
       }
     }
-    jsondata: allFoldingCrateJson {
+    stackingCrateJsondata: allStackingCrateJson(filter: {tags: {regex: $tag_regex}}) {
       edges {
         node {
           local_img {
@@ -182,19 +186,60 @@ export const query = graphql`
         }
       }
     }
-    # need to change the file path
-    bannerDesktop: file(relativePath: {eq: "folding-crates-banner.jpg"}) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
+    foldingCrateJsondata: allFoldingCrateJson(filter: {tags: {regex: $tag_regex}}) {
+      edges {
+        node {
+          local_img {
+            path {
+              childImageSharp {
+                fixed(width: 200, height: 200) {
+                  ...GatsbyImageSharpFixed
+                }
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          seo_meta_slug
         }
       }
     }
-    # need to change the file path
-    bannerPhone: file(relativePath: {eq: "folding-crates-banner-phone.jpg"}) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
+    nestingBoxJsondata: allNestingBoxJson(filter: {tags: {regex: $tag_regex}}) {
+      edges {
+        node {
+          local_img {
+            path {
+              childImageSharp {
+                fixed(width: 200, height: 200) {
+                  ...GatsbyImageSharpFixed
+                }
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          seo_meta_slug
+        }
+      }
+    }
+    palletBoxJsondata: allPalletBoxJson(filter: {tags: {regex: $tag_regex}}) {
+      edges {
+        node {
+          local_img {
+            path {
+              childImageSharp {
+                fixed(width: 200, height: 200) {
+                  ...GatsbyImageSharpFixed
+                }
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          seo_meta_slug
         }
       }
     }

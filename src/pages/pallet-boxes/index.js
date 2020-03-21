@@ -33,9 +33,16 @@ const JSONbuildtime = ({data}) => {
   		item.images = item.local_img.map(local_img_item=>local_img_item.path.childImageSharp)
   	}
   })
-  let cat_link = posts[0].category
+  // for facebook url
+  let cat_link = posts[0].seo_category_slug
+  cat_link= `/${cat_link}/`
+  // need to change
   let cat_text = menu.palletBox.text
-  let the_image = posts[0].images.src
+
+  let the_image = ``;
+  if(posts[0].images[0] && posts[0].images[0].fluid){
+    the_image = posts[0].images[0].fluid.src
+  }
 
   return (
       <Layout>
@@ -164,6 +171,9 @@ export const query = graphql`
               childImageSharp {
                 fixed(width: 200, height: 200) {
                   ...GatsbyImageSharpFixed
+                }
+                fluid {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

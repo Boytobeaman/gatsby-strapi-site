@@ -8,19 +8,9 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import InquiryForm from '../components/InquiryForm';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import {
-  aliResizeStyle_h_20,
-  aliResizeStyle_h_200,
-  aliResizeStyle_h_300,
-  aliResizeStyle_w_400,
-  aliResizeStyle_w_600,
-  aliResizeStyle_w_800,
-  aliResizeStyle_w_900,
-  aliResizeStyle_w_1024,
-  aliResizeStyle_w_1200,
   mmtoinch,
   kgtolbs,
   ltogal,
-  contact_url,
   cdn_img_thumbnail
 } from '../utils';
 

@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
 
   let domain_name = 'movingbox.cn'
@@ -13,6 +15,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
               seo_category
               seo_category_slug
               product_identify_cat
+              tags
             }
           }
         }
@@ -43,12 +46,21 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   //   }
   // `)
   // allProductsData.push(...allPalletBoxJsonResult.data.allPalletBoxJson.edges);
+
+  // Tag pages:
+  let tags = [];
+
   products.forEach(edge => {
     const product = edge.node
     let seo_category_slug = product.seo_category_slug
     let product_identify_cat = product.product_identify_cat
     let product_identify_cat_path = product_identify_cat.replace(/ +/g,"-")
     let slug = product.slug
+    console.log(`product.tags  ===== ${product.tags}`)
+    if(product.tags){
+      tags = tags.concat(product.tags.split(","))
+    }
+    
     createPage({
       path: `/${seo_category_slug}/${product.slug}/`,
       component: require.resolve(`./src/templates/product-${product_identify_cat_path}-graphql.js`),
@@ -58,4 +70,27 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       },
     })
   })
+
+  // Eliminate duplicate tags and false value
+  tags = _.compact(_.uniq(tags))
+
+  //get rid of space in began or end of each tag
+  tags.forEach((item, i) => {
+    tags[i] = item.trim()
+  })
+console.log(`tags ============================ ${JSON.stringify(tags)}`)
+  tags.forEach(tag => {
+    const tagPath = `/tags/${_.kebabCase(tag)}/`
+    let tag_regex = `/${tag}/`
+
+    createPage({
+      path: tagPath,
+      component: require.resolve(`./src/templates/tags.js`),
+      context: {
+        tag,
+        tag_regex,
+      },
+    })
+  })
+
 }
