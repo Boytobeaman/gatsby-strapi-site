@@ -131,7 +131,7 @@ const SEO = ({
         <>
           <Helmet title={seo.title} titleTemplate={seo.titleTemplate}>
             <meta name="description" content={seo.description} />
-            <meta name="image" content={seo.image} />
+            <meta name="image" content={seo.image ? `${siteUrl}${seo.image}` : ''} />
             <script type="application/ld+json">
               {JSON.stringify(breadcrumb).replace(/\//g,'\\/')}
             </script>
