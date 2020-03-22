@@ -146,14 +146,14 @@ const SEO = ({
             type={article ? 'article' : null}
             title={facebook_title ? facebook_title : seo.title}
             description={facebook_description ? facebook_description : seo.description}
-            image={seo.image}
+            image={seo.image ? `${siteUrl}${seo.image}` : ''}
             appID={facebookAppID}
           />
           <Twitter
             username={twitterUsername}
             title={twitter_title ? twitter_title : seo.title}
             description={twitter_description ? twitter_description : seo.description}
-            image={seo.image}
+            image={seo.image ? `${siteUrl}${seo.image}` : ''}
           />
         </>
       );
