@@ -7,9 +7,9 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import './slider.scss'
+
+import Img from 'gatsby-image';
 
 
 class Slider extends Component {
@@ -57,28 +57,20 @@ class Slider extends Component {
         <CarouselItem
           onExiting={this.onExiting}
           onExited={this.onExited}
-          key={item.src}
+          key={item.key}
         >
           {item.link_to?(
             <Link className="" to={item.link_to}>
-              <LazyLoadImage 
-                className="w-100" 
-                src={item.src}
-                placeholderSrc={item.placeholderImg}
-                effect="blur"
-                alt={item.altText} 
-                srcSet={item.srcset} 
-                sizes="100vw" />
+              <Img
+                fluid={item.childImageSharp.fluid}
+                alt={item.altText}
+              />
             </Link>
           ):(
-            <LazyLoadImage 
-              className="w-100" 
-              src={item.src}
-              placeholderSrc={item.placeholderImg}
-              effect="blur"
-              alt={item.altText} 
-              srcSet={item.srcset} 
-              sizes="100vw" />
+            <Img
+              fluid={item.childImageSharp.fluid}
+              alt={item.altText}
+            />
           )}
           <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>

@@ -60,7 +60,7 @@ const SEO = ({
         title: title || defaultTitle,
         titleTemplate: thisTitleTemplate || defaultTitleTemplate,
         description: description || defaultDescription,
-        image: image || `${siteUrl}${defaultImage}`,
+        image: image || `${defaultImage}`,
         url: `${siteUrl}${pathname || '/'}`,
       };
 
