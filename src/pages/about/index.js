@@ -13,7 +13,7 @@ export default class Index extends React.Component {
 
   render() {
     let img_data = this.props.data;
-debugger
+
     let items = [
       {
         childImageSharp: img_data.p1.childImageSharp,
