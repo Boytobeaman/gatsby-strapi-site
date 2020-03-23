@@ -12,34 +12,31 @@ import './about.scss'
 export default class Index extends React.Component {
 
   render() {
-    let map_img = `${cdn_url}/static/joinplastic_map_address.jpg`
-    let image_one = `${cdn_url}/static/about-us-cooperate-brand.jpg`
-    let image_two = `${cdn_url}/static/about-us-with-customers.jpg`
-    let image_three = `${cdn_url}/static/about-us-certifications.jpg`
+    let img_data = this.props.data;
+debugger
     let items = [
       {
-        src: `${image_one}`,
+        childImageSharp: img_data.p1.childImageSharp,
         altText: 'cooperate brand',
         caption: '',
-        link_to: ''
+        link_to: '',
+        key: 1,
       },
       {
-        src: `${image_two}`,
+        childImageSharp: img_data.p2.childImageSharp,
         altText: 'our customers',
         caption: '',
-        link_to: ''
+        link_to: '',
+        key: 2,
       },
       {
-        src: `${image_three}`,
+        childImageSharp: img_data.p3.childImageSharp,
         altText: 'plastic products certifications',
         caption: '',
-        link_to: ''
+        link_to: '',
+        key: 3,
       }
     ];
-    items.forEach(item => {
-      item.srcset = `${item.src}?x-oss-process=image/resize,w_360 360w,${item.src}?x-oss-process=image/resize,w_650 650w,${item.src}?x-oss-process=image/resize,w_850 850w,${item.src}?x-oss-process=image/resize,w_1000 1000w,${item.src}?x-oss-process=image/resize,w_1200 1200w`
-      item.placeholderImg = `${item.src}?x-oss-process=image/resize,w_50`
-    })
     return (
       <Layout>
         <Helmet>
@@ -251,3 +248,32 @@ export default class Index extends React.Component {
     );
   }
 }
+
+export const query = graphql`
+  query{
+    # need to change the file path
+    p1: file(relativePath: {eq: "about-us-cooperate-brand.jpg"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    # need to change the file path
+    p2: file(relativePath: {eq: "about-us-with-customers.jpg"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    # need to change the file path
+    p3: file(relativePath: {eq: "about-us-certifications.jpg"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
