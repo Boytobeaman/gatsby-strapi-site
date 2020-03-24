@@ -124,7 +124,7 @@ export default JSONbuildtime
 
 export const query = graphql`
   query{
-    strapidata: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "movingbox.cn"}}, product_identify_cat: {eq: "pallet box"}}) {
+    strapidata: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "uspalletbox.com"}}, product_identify_cat: {eq: "pallet box"}}) {
       edges {
         node {
           id

@@ -123,7 +123,7 @@ export default JSONbuildtime
 // need to change domain and product_identify_cat
 export const query = graphql`
   query{
-    strapidata: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "movingbox.cn"}}, product_identify_cat: {eq: "nesting box"}}) {
+    strapidata: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "uspalletbox.com"}}, product_identify_cat: {eq: "nesting box"}}) {
       edges {
         node {
           id
