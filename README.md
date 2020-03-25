@@ -18,6 +18,9 @@ move the json data(cat-one.json,...) and imagas to /content/a.com/ folder
 change the old domain( olddomain.com ) to new doman ( a.com );
 change menu(/src/utils.js) data base on your url of first step
 
+change category pages folder name according to your url of first step
+eg: /src/pages/cat-one/index.js
+
 ##### step four, build website using gatsby
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->

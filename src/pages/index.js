@@ -44,8 +44,8 @@ export default class IndexPage extends React.Component {
       <Layout>
         <SEO 
             titleTemplate="%s | Moving boxes"
-            title='Moving Bins For Sale, Plastic Moving Boxes Manufacturer & Supplier'
-            description = 'JOINPLASTIC is a Plastic Crate manufacturers and suppliers from China,we wholesale a wide range of products which include plastic moving boxes, collapsible plastic crates, fruits crate, stacking crates, attached lid containers, heavy duty crates, pallets, dollies'
+            title='Plastic Moving Boxes For Sale, Plastic Moving Crates Manufacturer & Supplier'
+            description = 'JOINPLASTIC is a Plastic Moving Crate manufacturers and suppliers from China,we wholesale a wide range of products which include plastic moving boxes, collapsible plastic crates, fruits crate, stacking crates, attached lid containers, heavy duty crates, pallets, dollies'
           />
         <div className="home-page">
           <section className="section">

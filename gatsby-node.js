@@ -2,11 +2,11 @@ const _ = require('lodash');
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
 
-  let domain_name = 'uspalletbox.com'
+  let domain_name = 'movingbox.cn '
   const result = await graphql(
     `
       {
-        products: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "uspalletbox.com"}}}) {
+        products: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "movingbox.cn "}}}) {
           edges {
             node {
               id
