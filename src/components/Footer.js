@@ -27,10 +27,10 @@ export default class Footer extends React.Component{
         </div>
         <div className="friendly-link">
           <a href="https://www.storage-totes.com/" target="_blank" className="footer-friendly-link">
-            plastic storage totes
+            heavy duty storage totes
           </a>
           <a href="https://www.vegcrates.com/" target="_blank" className="footer-friendly-link">
-            plastic vegetable crates manufacturers
+          crate of vegetables
           </a>
           <a href="https://www.chinaboxsale.com/product-category/bulk-plastic-containers/" target="_blank" className="footer-friendly-link">
            Bulk Plastic Containers
@@ -38,11 +38,11 @@ export default class Footer extends React.Component{
           <a href="https://www.chinaboxsale.com/product-category/parts-bins/" target="_blank" className="footer-friendly-link">
             plastic shelf bins
           </a>
-          <a href="https://www.plastic-crate.com/" target="_blank" className="footer-friendly-link">
-            plastic moving crates
+          <a href="https://www.plastic-crates.com/product-category/stackable-containers/" target="_blank" className="footer-friendly-link">
+          stackable plastic containers
           </a>
           <a href="https://www.ausplastic.com/product-category/euro-storage-boxes/" target="_blank" className="footer-friendly-link">
-            euro stacking boxes
+            euro stacking crates
           </a>
         </div>
         <div className="copy-right text-center py-3 px-1">
