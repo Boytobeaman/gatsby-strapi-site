@@ -27,22 +27,22 @@ export default class Footer extends React.Component{
         </div>
         <div className="friendly-link">
           <a href="https://www.storage-totes.com/" target="_blank" className="footer-friendly-link">
-            storage totes
+            plastic storage totes
           </a>
           <a href="https://www.vegcrates.com/" target="_blank" className="footer-friendly-link">
-            vegetable crates
+            plastic vegetable crates manufacturers
           </a>
           <a href="https://www.chinaboxsale.com/product-category/bulk-plastic-containers/" target="_blank" className="footer-friendly-link">
            Bulk Plastic Containers
           </a>
           <a href="https://www.chinaboxsale.com/product-category/parts-bins/" target="_blank" className="footer-friendly-link">
-            plastic parts bins
+            plastic shelf bins
           </a>
           <a href="https://www.plastic-crate.com/" target="_blank" className="footer-friendly-link">
-            plastic crates
+            plastic moving crates
           </a>
           <a href="https://www.ausplastic.com/product-category/euro-storage-boxes/" target="_blank" className="footer-friendly-link">
-            euro storage boxes
+            euro stacking boxes
           </a>
         </div>
         <div className="copy-right text-center py-3 px-1">
