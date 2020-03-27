@@ -12,7 +12,7 @@ module.exports = {
     description:
       'Wholesale plastic boxes, pallet boxes, dollies, plastic crates and containers directly from factory, quick LEAD time, high quality',
     siteUrl: `https://www.plasticcrate.net`,
-    image: `/img/main-slider-nesting-crates.jpg`,
+    image: `/img/home/main-slider-nesting-crates.jpg`,
     owner: '',
     twitterUsername: '@PalletBoxSale',
     facebookAppID: '',
