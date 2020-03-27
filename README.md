@@ -21,6 +21,8 @@ change menu(/src/utils.js) data base on your url of first step
 change category pages folder name according to your url of first step
 eg: /src/pages/cat-one/index.js
 
+change backlinks in footer component
+
 ##### step four, build website using gatsby
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->

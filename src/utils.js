@@ -40,23 +40,23 @@ export const menu = {
     text: 'Home'
   },
   foldingCrate:{
-    url: '/folding-crate/',
-    text: 'Folding Crate',
+    url: '/collapsible-bins/',
+    text: 'Collapsible Bins',
     product_identify_cat: 'folding crate'
   },
   nestingBox:{
-    url: '/plastic-moving-boxes/',
-    text: 'Plastic Moving Boxes',
+    url: '/moving-totes/',
+    text: 'Moving Totes',
     product_identify_cat: 'nesting box'
   },
   stackingCrate:{
-    url: '/euro-stacking-boxes/',
-    text: 'Euro Stacking Boxes',
+    url: '/straight-wall-bins/',
+    text: 'Straight Wall Bins',
     product_identify_cat: 'stacking crate'
   },
   palletBox:{
-    url: '/pallet-boxes/',
-    text: 'Pallet Boxes',
+    url: '/pallet-plastic-container/',
+    text: 'Pallet Plastic Container',
     product_identify_cat: 'pallet box'
   },
   contact:{
