@@ -11,7 +11,7 @@ module.exports = {
     titleTemplate: '%s | Moving bins wholesale',
     description:
       'Wholesale plastic boxes, pallet boxes, dollies, plastic crates and containers directly from factory, quick LEAD time, high quality',
-    siteUrl: `https://www.storagebinsell.com`,
+    siteUrl: `https://www.plasticcrate.net`,
     image: `/img/main-slider-nesting-crates.jpg`,
     owner: '',
     twitterUsername: '@PalletBoxSale',
@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content/storagebinsell.com`
+        path: `${__dirname}/content/plasticcrate.net`
       },
     },
     {

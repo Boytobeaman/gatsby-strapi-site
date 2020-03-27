@@ -19,14 +19,14 @@ export default class IndexPage extends React.Component {
     let items = [
       {
         childImageSharp: img_data.p1.childImageSharp,
-        altText: 'Attached Lid Container',
+        altText: menu.nestingBox.text,
         caption: '',
         link_to: menu.nestingBox.url,
         key: 1
       },
       {
         childImageSharp: img_data.p2.childImageSharp,
-        altText: 'Folding Crates',
+        altText: menu.foldingCrate.text,
         caption: '',
         link_to: menu.foldingCrate.url,
         key: 2
@@ -44,8 +44,8 @@ export default class IndexPage extends React.Component {
       <Layout>
         <SEO 
             titleTemplate="%s | Moving boxes"
-            title='Plastic Moving Boxes For Sale, Plastic Moving Crates Manufacturer & Supplier'
-            description = 'JOINPLASTIC is a Plastic Moving Crate manufacturers and suppliers from China,we wholesale a wide range of products which include plastic moving boxes, collapsible plastic crates, fruits crate, stacking crates, attached lid containers, heavy duty crates, pallets, dollies'
+            title='Plastic Storage Crates for sale, Plastic Crates Manufacturer & Supplier'
+            description = {`Buy Plastic Storage Crates and get the best deals ✅ at the lowest prices, we are a manufacturers and suppliers from China, wholesale fruits crate, ${menu.foldingCrate.text}, ${menu.nestingBox.text}, ${menu.stackingCrate.text}, ${menu.palletBox.text}, pallets, dollies`}
           />
         <div className="home-page">
           <section className="section">
