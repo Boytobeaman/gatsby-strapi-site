@@ -43,9 +43,9 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO 
-            titleTemplate="%s | Moving boxes"
-            title='Plastic Storage Crates for sale, Plastic Crates Manufacturer & Supplier'
-            description = {`Buy Plastic Storage Crates and get the best deals ✅ at the lowest prices, we are a manufacturers and suppliers from China, wholesale fruits crate, ${menu.foldingCrate.text}, ${menu.nestingBox.text}, ${menu.stackingCrate.text}, ${menu.palletBox.text}, pallets, dollies`}
+            titleTemplate="%s | Bulk Plastic Containers"
+            title='Bulk Plastic Containers for sale, Plastic Pallet Containers Manufacturer & Supplier'
+            description = {`Choose Bulk Plastic Containers, Plastic Pallet Containers, Collapsible bulk containers of all kinds and sizes. Best Prices, ${menu.foldingCrate.text}, ${menu.nestingBox.text}, ${menu.stackingCrate.text}, ${menu.palletBox.text}, pallets`}
           />
         <div className="home-page">
           <section className="section">
@@ -98,6 +98,10 @@ export default class IndexPage extends React.Component {
                   <p className="home-page-cat-text text-center">
                     Plastic Pallet Boxes
                   </p>
+                  <div className="d-none">
+                    each reusable container is designed to protect your product and reduce handling costs.
+                    containers are available in light-duty, medium-duty and heavy-duty designs to meet any requirement.
+                  </div>
                 </Link>
               </div>
             </div>
