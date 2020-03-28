@@ -36,6 +36,16 @@
           font-size: 12px;
           text-transform: capitalize;
         }
+        .bk-links{
+          color: #adb5bd;
+          a{
+            font-size: 12px;
+            color: #adb5bd;
+            &:not(:first-child){
+              margin-left: 5px;
+            }
+          }
+        }
       }
     }
     .amazon-content-wrap{

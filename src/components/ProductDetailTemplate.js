@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { kebabCase } from 'lodash'
 import { Link } from 'gatsby'
-import Content from '../components/Content'
+import Content, { HTMLContent } from '../components/Content'
 import ImageGallery from 'react-image-gallery';
 import InquiryForm from '../components/InquiryForm';
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -83,6 +83,7 @@ class ProductDetailTemplate extends React.Component{
       content,
       contentComponent,
       description,
+      backlinks,
       tags,
       title,
       parentLevelLink,
@@ -293,6 +294,7 @@ class ProductDetailTemplate extends React.Component{
                         </ul>
                       </div>
                     ) : null}
+                    <HTMLContent className="bk-links" content={backlinks} />
                     <meta itemProp="description" content={description} />
                   </div>
                 </div>

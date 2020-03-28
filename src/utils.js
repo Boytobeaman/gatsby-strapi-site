@@ -40,23 +40,23 @@ export const menu = {
     text: 'Home'
   },
   foldingCrate:{
-    url: '/collapsible-tote/',
-    text: 'Collapsible tote',
+    url: '/folding-plastic-box/',
+    text: 'Folding Plastic Box',
     product_identify_cat: 'folding crate'
   },
   nestingBox:{
-    url: '/hinged-lid-containers/',
-    text: 'Hinged Lid Containers',
+    url: '/distribution-containers/',
+    text: 'Distribution Containers',
     product_identify_cat: 'nesting box'
   },
   stackingCrate:{
-    url: '/industrial-boxes/',
-    text: 'Industrial Boxes',
+    url: '/euro-containers/',
+    text: 'Euro Containers',
     product_identify_cat: 'stacking crate'
   },
   palletBox:{
-    url: '/bulk-totes/',
-    text: 'Bulk Totes',
+    url: '/bulk-containers-wholesale/',
+    text: 'Bulk Containers',
     product_identify_cat: 'pallet box'
   },
   contact:{
