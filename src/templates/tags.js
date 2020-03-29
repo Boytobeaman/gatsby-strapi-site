@@ -18,16 +18,15 @@ const JSONbuildtime = ({data, pageContext, path}) => {
 
   let posts = data.strapidata.edges;
 
-  let stackingCrateJsondata = data.stackingCrateJsondata.edges;
-  let foldingCrateJsondata = data.foldingCrateJsondata.edges;
-  let nestingBoxJsondata = data.nestingBoxJsondata.edges;
+  // let stackingCrateJsondata = data.stackingCrateJsondata.edges;
+  // let foldingCrateJsondata = data.foldingCrateJsondata.edges;
+  // let nestingBoxJsondata = data.nestingBoxJsondata.edges;
+
   let palletBoxJsondata = data.palletBoxJsondata.edges;
+  let palletJsondata = data.palletJsondata.edges;
 
-  let img_data = [...stackingCrateJsondata, ...foldingCrateJsondata, ...nestingBoxJsondata, ...palletBoxJsondata];
+  let img_data = [...palletBoxJsondata, ...palletJsondata];
 
-  // need to change, get banner data
-  let bannerDesktop = data.bannerDesktop;
-  let bannerPhone = data.bannerPhone;
 
   debugger
   posts = posts.map(item=>item.node);
