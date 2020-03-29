@@ -186,5 +186,24 @@ export const query = graphql`
         }
       }
     }
+    palletJsondata: allPalletJson(filter: {tags: {regex: $tag_regex}}) {
+      edges {
+        node {
+          local_img {
+            path {
+              childImageSharp {
+                fixed(width: 200, height: 200) {
+                  ...GatsbyImageSharpFixed
+                }
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          seo_meta_slug
+        }
+      }
+    }
   }
 `
