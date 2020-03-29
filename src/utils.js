@@ -37,35 +37,48 @@ export const aliResizeStyle_w_1200 = '?x-oss-process=image/resize,w_1200';
 export const menu = {
   home:{
     url:'/',
-    text: 'Home'
+    text: 'Home',
+    showInUi: true
   },
   foldingCrate:{
     url: '/folding-plastic-box/',
     text: 'Folding Plastic Box',
-    product_identify_cat: 'folding crate'
+    product_identify_cat: 'folding crate',
+    showInUi: false
   },
   nestingBox:{
     url: '/distribution-containers/',
     text: 'Distribution Containers',
-    product_identify_cat: 'nesting box'
+    product_identify_cat: 'nesting box',
+    showInUi: false
   },
   stackingCrate:{
     url: '/euro-containers/',
     text: 'Euro Containers',
-    product_identify_cat: 'stacking crate'
+    product_identify_cat: 'stacking crate',
+    showInUi: false
+  },
+  pallet:{
+    url: '/plastic-pallets/',
+    text: 'Plastic Pallets',
+    product_identify_cat: 'pallet',
+    showInUi: true
   },
   palletBox:{
-    url: '/bulk-containers-wholesale/',
-    text: 'Bulk Containers',
-    product_identify_cat: 'pallet box'
+    url: '/plastic-pallet-boxes/',
+    text: 'Plastic Pallet Boxes',
+    product_identify_cat: 'pallet box',
+    showInUi: true
   },
   contact:{
     url: '/contact/',
-    text: 'Contact'
+    text: 'Contact',
+    showInUi: true
   },
   about:{
     url: '/about/',
-    text: 'About'
+    text: 'About',
+    showInUi: true
   }
 }
 export const getUrlQuery = function (variable) {

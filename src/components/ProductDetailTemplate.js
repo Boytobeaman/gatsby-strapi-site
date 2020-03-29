@@ -304,22 +304,27 @@ class ProductDetailTemplate extends React.Component{
                   <div className="bg-white p-3">
                     <PostContent className="post-description single-product" content={content} />
                     {
-                      product_identify_cat === menu.foldingCrate.product_identify_cat &&(
+                      menu.foldingCrate && product_identify_cat === menu.foldingCrate.product_identify_cat &&(
                         <FoldingCrate />
                       )
                     }
                     {
-                      product_identify_cat === menu.nestingBox.product_identify_cat &&(
+                      menu.nestingBox && product_identify_cat === menu.nestingBox.product_identify_cat &&(
                         <NestingBox />
                       )
                     }
                     {
-                      product_identify_cat === menu.stackingCrate.product_identify_cat &&(
+                      menu.stackingCrate && product_identify_cat === menu.stackingCrate.product_identify_cat &&(
                         <StackingCrate />
                       )
                     }
                     {
-                      product_identify_cat === menu.palletBox.product_identify_cat &&(
+                      menu.palletBox && product_identify_cat === menu.palletBox.product_identify_cat &&(
+                        <PalletBox />
+                      )
+                    }
+                    {
+                      menu.pallet && product_identify_cat === menu.pallet.product_identify_cat &&(
                         <PalletBox />
                       )
                     }
@@ -332,7 +337,7 @@ class ProductDetailTemplate extends React.Component{
           <div className="amazon-content-wrap">
             <p className="text-center font-weight-bold">Amazon ADs</p>
               {
-                product_identify_cat === menu.foldingCrate.product_identify_cat &&(
+                menu.foldingCrate && product_identify_cat === menu.foldingCrate.product_identify_cat &&(
                   <span className="collapsible-crates">
                     <a href="https://www.amazon.com/gp/product/B015PIRFD6/ref=as_li_ss_il?ie=UTF8&linkCode=li2&tag=cnboxstorecom-20&linkId=e3a96d5a6821f6f92a4166f0cceb2e25&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B015PIRFD6&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=cnboxstorecom-20&language=en_US" /></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=cnboxstorecom-20&language=en_US&l=li2&o=1&a=B015PIRFD6" width="1" height="1" border="0" alt="" />
                     <a href="https://www.amazon.com/CleverMade-Collapsible-Stackable-Containers-CleverCrates/dp/B07JD5WMH3/ref=as_li_ss_il?_encoding=UTF8&psc=1&refRID=E0CH2X76SVQWNV7G0QDB&linkCode=li2&tag=cnboxstorecom-20&linkId=4206afac73b7ada6b4d0018bba7a80bb&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07JD5WMH3&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=cnboxstorecom-20&language=en_US" /></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=cnboxstorecom-20&language=en_US&l=li2&o=1&a=B07JD5WMH3" width="1" height="1" border="0" alt="" />
@@ -342,7 +347,7 @@ class ProductDetailTemplate extends React.Component{
                 )
               }
               {
-                product_identify_cat === menu.nestingBox.product_identify_cat &&(
+                menu.nestingBox && product_identify_cat === menu.nestingBox.product_identify_cat &&(
                   <span className="moving-crates">
                     <a href="https://www.amazon.com/Akro-Mils-39120-Distribution-Container-21-5-Inch/dp/B000189CSC/ref=as_li_ss_il?keywords=moving+crates&qid=1575471265&sr=8-1&linkCode=li3&tag=cnboxstorecom-20&linkId=62fa517806eea73338ad5b36130614c2&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B000189CSC&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=cnboxstorecom-20&language=en_US" /></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=cnboxstorecom-20&language=en_US&l=li3&o=1&a=B000189CSC" width="1" height="1" border="0" alt="" />
                     <a href="https://www.amazon.com/Wellmax-Platform-Foldable-Storage-Capacity/dp/B076ZYHBJF/ref=as_li_ss_il?keywords=moving+crates+dolly&qid=1575471632&sr=8-19-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzSVNPMVM1VjVDNEJXJmVuY3J5cHRlZElkPUEwOTkyNzkzMkRUSVNKWUwwV1A4JmVuY3J5cHRlZEFkSWQ9QTA3ODkyNjlaNUJGMDY2QzhQMFcmd2lkZ2V0TmFtZT1zcF9idGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&linkCode=li3&tag=cnboxstorecom-20&linkId=41496ae938daba71a73fd455e5524bba&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B076ZYHBJF&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=cnboxstorecom-20&language=en_US" /></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=cnboxstorecom-20&language=en_US&l=li3&o=1&a=B076ZYHBJF" width="1" height="1" border="0" alt="" />
@@ -351,7 +356,7 @@ class ProductDetailTemplate extends React.Component{
                 )
               }
               {
-                product_identify_cat === menu.stackingCrate.product_identify_cat &&(
+                menu.stackingCrate && product_identify_cat === menu.stackingCrate.product_identify_cat &&(
                   <span className="euro-stacking-container">
                     <a href="https://www.amazon.com/Buckhorn-SW241507F101000-Plastic-Straight-Container/dp/B01JUE8Q9I/ref=as_li_ss_il?crid=2YCHD6TZ6TK55&keywords=straight+wall+container+tote&qid=1575472400&sprefix=straight+wall+c,aps,420&sr=8-1&linkCode=li3&tag=cnboxstorecom-20&linkId=bc61cb44ebcd4308a897714d026c4f4f&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01JUE8Q9I&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=cnboxstorecom-20&language=en_US" /></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=cnboxstorecom-20&language=en_US&l=li3&o=1&a=B01JUE8Q9I" width="1" height="1" border="0" alt="" />
                     <a href="https://www.amazon.com/Akro-Mils-37682-Straight-Container-24-Inch/dp/B000189CR8/ref=as_li_ss_il?_encoding=UTF8&pd_rd_i=B000189CR8&pd_rd_r=f82acce5-7894-430f-a2c9-79e4ac896313&pd_rd_w=8vVCu&pd_rd_wg=jxBWe&pf_rd_p=5873ae95-9063-4a23-9b7e-eafa738c2269&pf_rd_r=H4868M2NFY7QQSS76QR0&psc=1&refRID=H4868M2NFY7QQSS76QR0&linkCode=li3&tag=cnboxstorecom-20&linkId=7922b29028d421eb267b7293461bc30a&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B000189CR8&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=cnboxstorecom-20&language=en_US" /></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=cnboxstorecom-20&language=en_US&l=li3&o=1&a=B000189CR8" width="1" height="1" border="0" alt="" />
@@ -360,7 +365,7 @@ class ProductDetailTemplate extends React.Component{
                 )
               }
               {
-                product_identify_cat === menu.palletBox.product_identify_cat &&(
+                menu.palletBox && product_identify_cat === menu.palletBox.product_identify_cat &&(
                   <span className="bulk-container">
                     <a target="_blank" href="https://www.amazon.com/gp/product/B00AYUVBL8/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00AYUVBL8&linkCode=as2&tag=cnboxstorecom-20&linkId=6e188b1dba998800fa5dc6b44bfc92f5"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00AYUVBL8&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=cnboxstorecom-20" /><img src="//ir-na.amazon-adsystem.com/e/ir?t=cnboxstorecom-20&l=am2&o=1&a=B00AYUVBL8" width="1" height="1" border="0" alt="" /></a>
                     <a href="https://www.amazon.com/Crown-Heavy-Duty-Pallet-Truck-27x48/dp/B01LBBB7SK/ref=as_li_ss_il?crid=1UQCKI3FSP0JF&keywords=pallet+truck&qid=1575472940&sprefix=pallet+trunck,aps,631&sr=8-1&linkCode=li3&tag=cnboxstorecom-20&linkId=97aa63da9c184ad629c21dc007b3cacb&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01LBBB7SK&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=cnboxstorecom-20&language=en_US" /></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=cnboxstorecom-20&language=en_US&l=li3&o=1&a=B01LBBB7SK" width="1" height="1" border="0" alt="" />

@@ -128,7 +128,7 @@ export default JSONbuildtime
 // need to change domain and product_identify_cat
 export const query = graphql`
   query($tag_regex: String!){
-    strapidata: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "bulk-containers.com"}}, tags: {regex: $tag_regex}}) {
+    strapidata: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "palletssupplier.com"}}, tags: {regex: $tag_regex}}) {
       edges {
         node {
           id
@@ -167,63 +167,7 @@ export const query = graphql`
         }
       }
     }
-    stackingCrateJsondata: allStackingCrateJson(filter: {tags: {regex: $tag_regex}}) {
-      edges {
-        node {
-          local_img {
-            path {
-              childImageSharp {
-                fixed(width: 200, height: 200) {
-                  ...GatsbyImageSharpFixed
-                }
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          seo_meta_slug
-        }
-      }
-    }
-    foldingCrateJsondata: allFoldingCrateJson(filter: {tags: {regex: $tag_regex}}) {
-      edges {
-        node {
-          local_img {
-            path {
-              childImageSharp {
-                fixed(width: 200, height: 200) {
-                  ...GatsbyImageSharpFixed
-                }
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          seo_meta_slug
-        }
-      }
-    }
-    nestingBoxJsondata: allNestingBoxJson(filter: {tags: {regex: $tag_regex}}) {
-      edges {
-        node {
-          local_img {
-            path {
-              childImageSharp {
-                fixed(width: 200, height: 200) {
-                  ...GatsbyImageSharpFixed
-                }
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          seo_meta_slug
-        }
-      }
-    }
+    
     palletBoxJsondata: allPalletBoxJson(filter: {tags: {regex: $tag_regex}}) {
       edges {
         node {

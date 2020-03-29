@@ -52,13 +52,15 @@ export default class MainNavbar extends React.Component{
           </NavItem>
         )
       }else{
-        return (
-          <NavItem key={key}>
-            <Link className={`nav-link ${this_menu.activeStatus}`} to={this_menu.url} title={this_menu.text}>
-                {this_menu.text}
-              </Link>
-          </NavItem>
-        )
+        if(this_menu.showInUi){
+          return (
+            <NavItem key={key}>
+              <Link className={`nav-link ${this_menu.activeStatus}`} to={this_menu.url} title={this_menu.text}>
+                  {this_menu.text}
+                </Link>
+            </NavItem>
+          )
+        }
       }
     });
   }

@@ -57,35 +57,13 @@ export default class IndexPage extends React.Component {
             <h2 className="text-center p-4 text-white">Products Categories</h2>
             <div className="row mx-0">
               <div className="col-sm-3">
-                <Link className="nav-link text-white font-weight-bold pb-0" to={menu.foldingCrate.url}>
-                  <Img
-                    fluid={img_data.cat_p1.childImageSharp.fluid}
-                    alt="Plastic Folding Crates"
-                  />
-                  <p className="home-page-cat-text text-center">
-                    Plastic Folding Crates
-                  </p>
-                </Link>
-              </div>
-              <div className="col-sm-3">
-                <Link className="nav-link text-white font-weight-bold pb-0" to={menu.nestingBox.url}>
-                  <Img
-                    fluid={img_data.cat_p2.childImageSharp.fluid}
-                    alt="Plastic Moving Boxes"
-                  />
-                  <p className="home-page-cat-text text-center">
-                    Plastic Moving Boxes
-                  </p>
-                </Link>
-              </div>
-              <div className="col-sm-3">
-                <Link className="nav-link text-white font-weight-bold pb-0" to={menu.stackingCrate.url}>
+                <Link className="nav-link text-white font-weight-bold pb-0" to={menu.pallet.url}>
                   <Img
                     fluid={img_data.cat_p3.childImageSharp.fluid}
                     alt="Euro Stacking Containers"
                   />
                   <p className="home-page-cat-text text-center">
-                    Euro Stacking Containers
+                    Plastic Pallets
                   </p>
                 </Link>
               </div>
@@ -104,6 +82,29 @@ export default class IndexPage extends React.Component {
                   </div>
                 </Link>
               </div>
+              <div className="col-sm-3">
+                <a className="nav-link text-white font-weight-bold pb-0" href="https://www.movingboxsale.com/folding-crates/" target="_blank">
+                  <Img
+                    fluid={img_data.cat_p1.childImageSharp.fluid}
+                    alt="Plastic Folding Crates"
+                  />
+                  <p className="home-page-cat-text text-center">
+                    Folding Crates
+                  </p>
+                </a>
+              </div>
+              <div className="col-sm-3">
+              <a className="nav-link text-white font-weight-bold pb-0" href="https://www.movingboxsale.com/moving-bins/" target="_blank">
+                <Img
+                  fluid={img_data.cat_p2.childImageSharp.fluid}
+                  alt="Plastic Moving Bins"
+                />
+                <p className="home-page-cat-text text-center">
+                  Plastic Moving Bins
+                </p>
+              </a>
+              </div>
+              
             </div>
           </section>
           <section className="bg-light product-customization">
@@ -264,7 +265,7 @@ export const query = graphql`
       }
     }
     # need to change the file path
-    cat_p3: file(relativePath: {eq: "euro-stacking-crates.jpg"}) {
+    cat_p3: file(relativePath: {eq: "plastic-pallets.jpg"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -272,7 +273,7 @@ export const query = graphql`
       }
     }
     # need to change the file path
-    cat_p4: file(relativePath: {eq: "plastic-pallet-boxes.jpg"}) {
+    cat_p4: file(relativePath: {eq: "plastic-pallet-boxes-b.jpg"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
