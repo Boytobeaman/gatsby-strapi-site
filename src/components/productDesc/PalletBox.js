@@ -35,7 +35,9 @@ export default function Description(props) {
               
             </ul>
             <p className="d-none d-lg-block mb-0 h6">
-            Eco-friendly, Collapsible saving you space, Effecient loading via built-in plastic pallet.
+            We stock a range of plastic pallet boxes in various designs to suit your business needs. 
+            Rigid pallet boxes and ventilated pallet boxes are ideal for the food and pharmaceutical industries as they have a greater storage capacity and can be stacked safely. 
+            The sturdy collapsible pallet boxes can be folded when empty to save on storage space. Our plastic pallets are versatile in their design and can be used by many different businesses in a variety of industries.
             </p>
             <p>
             We offer you hot sale and cheap plastic pallet bin, folding plastic pallet box, pallet crate, plastic pallet containers at wholesale price. Our Plastic pallet containers are made from the most durable, dependable plastics, designed to withstand the shipping process for years to come. We offer both heavy duty and light duty pallet boxes.

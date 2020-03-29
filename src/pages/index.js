@@ -19,16 +19,16 @@ export default class IndexPage extends React.Component {
     let items = [
       {
         childImageSharp: img_data.p1.childImageSharp,
-        altText: menu.nestingBox.text,
+        altText: menu.pallet.text,
         caption: '',
-        link_to: menu.nestingBox.url,
+        link_to: menu.pallet.url,
         key: 1
       },
       {
         childImageSharp: img_data.p2.childImageSharp,
-        altText: menu.foldingCrate.text,
+        altText: menu.palletBox.text,
         caption: '',
-        link_to: menu.foldingCrate.url,
+        link_to: menu.palletBox.url,
         key: 2
       },
       {
@@ -225,7 +225,7 @@ export default class IndexPage extends React.Component {
 export const query = graphql`
   query{
     # need to change the file path
-    p1: file(relativePath: {eq: "home/main-slider-attached-lid-container.jpg"}) {
+    p1: file(relativePath: {eq: "home/main-slider-plastic-pallets.png"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -233,7 +233,7 @@ export const query = graphql`
       }
     }
     # need to change the file path
-    p2: file(relativePath: {eq: "home/main-slider-folding-crates.jpg"}) {
+    p2: file(relativePath: {eq: "home/main-slider-pallet-box.jpg"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

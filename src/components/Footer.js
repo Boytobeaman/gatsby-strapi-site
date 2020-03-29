@@ -27,25 +27,19 @@ export default class Footer extends React.Component{
         </div>
         <div className="friendly-link">
           <a href="https://www.best-boxes.com/product-category/attached-lid-container/" target="_blank" className="footer-friendly-link">
-            plastic shipping containers with attached lids
+          attached lid distribution containers
           </a>
           <a href="https://www.plastic-crates.com/product-category/totes-with-lids/" target="_blank" className="footer-friendly-link">
-          plastic totes with lids
-          </a>
-          <a href="https://www.ausplastic.com/product-category/euro-storage-boxes/" target="_blank" className="footer-friendly-link">
-            euro containers 600x400
+          plastic crates
           </a>
           <a href="https://www.movingboxsale.com/plastic-pallet-containers/" target="_blank" className="footer-friendly-link">
-          plastic storage pallet box
+          plastic pallet containers
           </a>
           <a href="https://www.vegcrates.com/" target="_blank" className="footer-friendly-link">
-          vegetable storage crates
+          vegetable crates
           </a>
           <a href="https://www.chinaboxsale.com/product-category/straight-wall-container/" target="_blank" className="footer-friendly-link">
           straight wall containers
-          </a>
-          <a href="https://www.storage-totes.com/product-category/collapsible-storage-bins/" target="_blank" className="footer-friendly-link">
-          collapsible storage bins
           </a>
           
         </div>

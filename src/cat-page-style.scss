@@ -100,7 +100,7 @@
     background: linear-gradient(to left bottom,#34485c,#fff);
     // min-height: 200px;
     color: #fff;
-    .cat-desc-top-img-wrap{
+    .cat-desc-top-img-wrap:not(.custom){
         padding-bottom: calc(100% * 42 / 192 );
         @media screen and (max-width: 767px) {
             padding-bottom: calc(100% * 420 / 1062 );

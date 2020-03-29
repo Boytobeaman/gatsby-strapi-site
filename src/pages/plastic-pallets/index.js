@@ -9,7 +9,7 @@ import { menu } from '../../utils';
 import Img from 'gatsby-image';
 import '../../cat-page-style.scss';
 // need to change
-import ThisCatDesc from '../../components/productDesc/NestingBox';
+// import ThisCatDesc from '../../components/productDesc/NestingBox';
 import AllProductCommonDesc from '../../components/productDesc/AllProductCommonDesc';
 
 
@@ -48,16 +48,16 @@ const JSONbuildtime = ({data}) => {
         <section className="section product-cate-page">
           <SEO 
             thisTitleTemplate={`%s | ${cat_text} for sale`}
-            title={`${cat_text}, cheap ${cat_text} for moving`}
-            description = {`Wholesale ${cat_text}, cheap ${cat_text} for sale, make your move as environmentally-friendly as possible`}
+            title={`${cat_text}, cheap ${cat_text} supplier`}
+            description = {`Wholesale ${cat_text}, cheap ${cat_text} for sale, These lightweight plastic pallets can be stacked one into the other to save space. Despite their low empty weight, They have a high load-bearing capacity`}
             pathname = {`${cat_link}`}
             image = {the_image}
             position = '2'
-            ratingValue = '4.9'
-            reviewCount = '178'
-            price = '8.19'
-            lowPrice = '4.69'
-            highPrice = '21.39'
+            ratingValue = '4.8'
+            reviewCount = '168'
+            price = '22.19'
+            lowPrice = '20.69'
+            highPrice = '30.49'
           />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
@@ -72,16 +72,16 @@ const JSONbuildtime = ({data}) => {
             </nav>
             
             <div className="cat-desc-top-wrap">
-              <div className="d-none d-sm-block cat-desc-top-img-wrap">
+              <div className="d-none d-sm-block cat-desc-top-img-wrap custom">
                 <Img
                   fluid={bannerDesktop.childImageSharp.fluid}
-                  alt='plastic moving boxes'
+                  alt='plastic pallets'
                 />
               </div>
-              <div className="d-block d-sm-none cat-desc-top-img-wrap">
+              <div className="d-block d-sm-none cat-desc-top-img-wrap custom">
                 <Img
                   fluid={bannerPhone.childImageSharp.fluid}
-                  alt='plastic moving boxes'
+                  alt='plastic pallets'
                 />
               </div>
             </div>
@@ -110,7 +110,7 @@ const JSONbuildtime = ({data}) => {
               })}
 
             <div className="cat-desc-section">
-              <ThisCatDesc />
+              {/* <ThisCatDesc /> */}
               <AllProductCommonDesc />
             </div>
           </div>
@@ -182,7 +182,7 @@ export const query = graphql`
       }
     }
     # need to change the file path
-    bannerDesktop: file(relativePath: {eq: "moving-bins-banner.jpg"}) {
+    bannerDesktop: file(relativePath: {eq: "plastic-pallets-factory-display.png"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -190,7 +190,7 @@ export const query = graphql`
       }
     }
     # need to change the file path
-    bannerPhone: file(relativePath: {eq: "moving-bins-banner-phone.jpg"}) {
+    bannerPhone: file(relativePath: {eq: "plastic-pallet-production.jpg"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
