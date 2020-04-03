@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: 'Plastic moving bins wholesale,moving crates for sale',
-    titleTemplate: '%s | Moving bins wholesale',
+    titleTemplate: '%s | Pallets Supplier',
     description:
       'Wholesale plastic boxes, pallet boxes, dollies, plastic crates and containers directly from factory, quick LEAD time, high quality',
     siteUrl: `https://www.palletssupplier.com`,

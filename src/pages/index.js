@@ -43,9 +43,9 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO 
-            titleTemplate="%s | Bulk Plastic Containers"
-            title='Bulk Plastic Containers for sale, Plastic Pallet Containers Manufacturer & Supplier'
-            description = {`Choose Bulk Plastic Containers, Plastic Pallet Containers, Collapsible bulk containers of all kinds and sizes. Best Prices, ${menu.foldingCrate.text}, ${menu.nestingBox.text}, ${menu.stackingCrate.text}, ${menu.palletBox.text}, pallets`}
+            titleTemplate="%s | Plastic pallets supplier"
+            title='Bulk Plastic Containers for sale, Plastic Pallets Manufacturer'
+            description = {`Choose Bulk Plastic Containers, Plastic Pallets, Collapsible bulk containers of all kinds and sizes. Best Prices, ${menu.foldingCrate.text && `${menu.foldingCrate.text}, `}${menu.nestingBox.text && `${menu.nestingBox.text}, `}${menu.stackingCrate.text && `${menu.stackingCrate.text}, `}${menu.palletBox.text && `${menu.palletBox.text}, `} wholesale`}
           />
         <div className="home-page">
           <section className="section">
@@ -165,14 +165,17 @@ export default class IndexPage extends React.Component {
               <div className="col-sm-7">
                 <div className="center-y-parent h-100">
                   <div className="center-y-child invalid-xs p-3">
-                    <h2>Plastic Crates Manufacturer & Supplier</h2>
+                    <h2>Plastic Pallets Manufacturer & Supplier</h2>
                     <ul>
                       <li>Wholesale Pricing</li>
-                      <li>All Colors + Custom Logo</li>
                       <li>Quality assurance</li>
+                      <li>Light, space-saving, and reliable</li>
                     </ul>
                     <div className="text-left">
-                      <h6>Get the best deal for plastic moving boxes, collapsible plastic crates, stackable plastic crates, pallet boxes from Chinese manufacture directly.</h6>
+                      <h6>Pallets intended for moderate reuse applications. Depending on the style of plastic pallet, some models are much lighter weight, and thus are easier to handle than wood pallets, plastic pallets that can be used for various industries and applications. </h6>
+                      <p>These plastic pallets can be used again and again, making them an economical solution for your business.</p>
+                      <p>Consider stackable plastic pallets when your typical product loads are very heavy, and you need to stack-load products in your warehouse operations.</p>
+                      <p>These plastic pallets reduce storage and transportation costs. The consistent lightweight design facilitates handling and makes these plastic pallets optimal carriers for export.</p>
                     </div>
                   </div>
                 </div>
@@ -184,35 +187,6 @@ export default class IndexPage extends React.Component {
                 />
               </div>
             </div>
-          </section>
-          <section className="bg-dark text-white py-5">
-              <div className="text-center mb-4 h3 py-3">We Provide Crates and Boxes For</div>
-              <div className="row mx-0 text-center">
-                  <div className="col-sm-12 col-md-4">
-                    <h5 className="text-white">Moving company</h5>
-                    <Img
-                      fluid={img_data.customer_p1.childImageSharp.fluid}
-                      alt="Plastic crates manufacturer"
-                    />
-                    <p className="text-muted p-3">Moving isn’t always great for the environment. Luckily, we provide <strong>plastic moving boxes</strong> for moving companies to make moving more planet-friendly.</p>
-                  </div>
-                  <div className="col-sm-12 col-md-4">
-                    <h5 className="text-white">Retailers</h5>
-                    <Img
-                      fluid={img_data.customer_p2.childImageSharp.fluid}
-                      alt="Plastic crates manufacturer"
-                    />
-                    <p className="text-muted p-3">Retailers can enjoy the high quality and competitive price of our plastic products,and we had build a good relationship with retails across the world</p>
-                  </div>
-                  <div className="col-sm-12 col-md-4">
-                    <h5 className="text-white">Anyone</h5>
-                    <Img
-                      fluid={img_data.customer_p3.childImageSharp.fluid}
-                      alt="Plastic crates manufacturer"
-                    />
-                    <p className="text-muted p-3">We had supplied <strong>plastic crates</strong> for farms, schools, corporations and organizations.And we provide good Pre-and post-sales support for our customers</p>
-                  </div>
-                </div>
           </section>
         </div>
         
