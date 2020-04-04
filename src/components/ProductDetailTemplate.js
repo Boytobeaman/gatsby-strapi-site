@@ -11,6 +11,7 @@ import "./ProductDetailTemplate.scss";
 import { menu } from '../utils'
 import NestingBox from './productDesc/NestingBox'
 import PalletBox from './productDesc/PalletBox'
+import Pallet from './productDesc/Pallet'
 import StackingCrate from './productDesc/StackingCrate'
 import FoldingCrate from './productDesc/FoldingCrate'
 import AllProductCommonDesc from './productDesc/AllProductCommonDesc'
@@ -206,19 +207,22 @@ class ProductDetailTemplate extends React.Component{
                               <span className="pull-right">in</span>
                             </td>
                           </tr>
-                          <tr>
-                            <td>
-                              <h6>Internal Dimensions</h6>
-                              <span>(L * W * H)</span>
-                            </td>
-                            <td className="internal-dimension">
-                              <span className="mm pull-left value" itemProp="Dimensions(mm)">{internal_long} X {internal_width} X {internal_height}</span>
-                              <span className="pull-right">mm</span>
-                              <hr className="w-100 mt-4 mb-0" />
-                              <span className="inch pull-left value" itemProp="Dimensions(inch)">{(internal_long * mmtoinch).toFixed(2)} X {(internal_width * mmtoinch).toFixed(2)} X {(internal_height * mmtoinch).toFixed(2)}</span>
-                              <span className="pull-right">in</span>
-                            </td>
-                          </tr>
+                          {internal_long && (
+                            <tr>
+                              <td>
+                                <h6>Internal Dimensions</h6>
+                                <span>(L * W * H)</span>
+                              </td>
+                              <td className="internal-dimension">
+                                <span className="mm pull-left value" itemProp="Dimensions(mm)">{internal_long} X {internal_width} X {internal_height}</span>
+                                <span className="pull-right">mm</span>
+                                <hr className="w-100 mt-4 mb-0" />
+                                <span className="inch pull-left value" itemProp="Dimensions(inch)">{(internal_long * mmtoinch).toFixed(2)} X {(internal_width * mmtoinch).toFixed(2)} X {(internal_height * mmtoinch).toFixed(2)}</span>
+                                <span className="pull-right">in</span>
+                              </td>
+                            </tr>
+                          )}
+                          
                           {folded_height && (
                             <tr>
                               <td>
@@ -325,7 +329,7 @@ class ProductDetailTemplate extends React.Component{
                     }
                     {
                       menu.pallet && product_identify_cat === menu.pallet.product_identify_cat &&(
-                        <PalletBox />
+                        <Pallet />
                       )
                     }
                     <AllProductCommonDesc />
