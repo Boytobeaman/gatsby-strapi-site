@@ -9,7 +9,7 @@ import { menu } from '../../utils';
 import Img from 'gatsby-image';
 import '../../cat-page-style.scss';
 // need to change
-// import ThisCatDesc from '../../components/productDesc/NestingBox';
+import ThisCatDesc from '../../components/productDesc/Pallet';
 import AllProductCommonDesc from '../../components/productDesc/AllProductCommonDesc';
 
 
@@ -85,7 +85,10 @@ const JSONbuildtime = ({data}) => {
                 />
               </div>
             </div>
-
+            <div className="">
+              <ThisCatDesc />
+            </div>
+            
             {posts
               .map((post) => {
 
@@ -110,7 +113,6 @@ const JSONbuildtime = ({data}) => {
               })}
 
             <div className="cat-desc-section">
-              {/* <ThisCatDesc /> */}
               <AllProductCommonDesc />
             </div>
           </div>
