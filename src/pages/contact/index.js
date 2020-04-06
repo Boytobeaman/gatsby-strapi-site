@@ -151,6 +151,12 @@ export default class Index extends React.Component {
                   </p>
                 </div>
               </div>
+              <div>
+                <div className="col">
+                  If you have any concerns or queries related to our products or our work, kindly contact us via the email address provided. 
+                  You can also call us on our phone number, during work hours. We will come in contact with you as soon as possible
+                </div>
+              </div>
             </div>
           </div>
         </section>

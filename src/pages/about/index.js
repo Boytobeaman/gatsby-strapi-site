@@ -40,8 +40,8 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <Helmet>
-          <title>{`Plastic Crates Manufacturer & Supplier | About us`}</title>
-          <meta name="description" content={`We wholesale a wide range of products like plastic moving boxes, collapsible plastic crates, fruits crate, stacking crates, attached lid containers, heavy duty crates, pallets, dollies.we are a Plastic products manufacturer and supplier from China and we have customers all around the world`} />
+          <title>{`Plastic Pallets Manufacturer & Supplier | About us`}</title>
+          <meta name="description" content={`We take pride in being the largest plastic pallet manufacturer in China in serving our customers with the best quality plastic pallets`} />
         </Helmet>
         <section className="section">
           <div className="container-fluid">
@@ -70,17 +70,13 @@ export default class Index extends React.Component {
                 <div>
                   <div className="p-3 bg-white">
                     <h1 className="h4">Who are we?</h1>
-                    <p>JOINPLASTIC Company is a Chinese Company, specializing in developing and producing logistic handling materials. 
-                      Our main products are industrial plastic boxes, which can be classified into three parts; 
-                      Stackable Boxes, Nestable-Stackable Boxes and Collapsible boxes. 
-                      We also manufacture plastic turnover boxes that has a strong technical force. 
-                      Our good quality products, reasonable prices and modern product designs make your logistic packing and personal storage easier. 
-                      These products are extensively used by logistic firms and moving firm among the long list of other firms. 
-                      Our products modern design allows these products to continuously meet the ever changing economic and social needs.
-                      Our products are widely recognized and trusted by all users all-around the globe.
+                    <p>At palletssupplier.com, there is a highly professional, hardworking and passionate group of people in the plastic pallet manufacturer and supplier business to serve the shipping, storage, and handling industry as well as the consumer market. 
+                      Our products are exceptional and are ahead of all their competition in terms of price, structure, and durability. 
+                      We take pride in being the largest plastic pallet manufacturer in China in serving our customers with the best quality plastic pallets and a similar variety of products that the market has to offer.
                     </p>
                     <p>
-                      Looking for best business for your money? Look no further, we strive for mutual benefit and look to build a long lasting business relationship.
+                      Customer satisfaction is our number one priority, we have dedicated ourselves to provide the finest class goods by going above and beyond. 
+                      Please feel free to look around our website and browse through the products we have to offer.
                     </p>
                   </div>
                 </div>

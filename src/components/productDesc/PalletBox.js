@@ -40,6 +40,11 @@ export default function Description(props) {
             The sturdy collapsible pallet boxes can be folded when empty to save on storage space. Our plastic pallets are versatile in their design and can be used by many different businesses in a variety of industries.
             </p>
             <p>
+              At palletssupplier.com, we manufacture and supply plastic pallet boxes made of the same high-density polyethylene used in our heavy-duty plastic pallets. 
+              This makes it durable, strong and resistant to various chemicals. These plastic pallet containers are also available in various shapes and sizes depending on the customer’s need. 
+              They can be used in storing and shipping consumer goods or as bulk plastic storage containers.
+            </p>
+            <p>
             We offer you hot sale and cheap plastic pallet bin, folding plastic pallet box, pallet crate, plastic pallet containers at wholesale price. Our Plastic pallet containers are made from the most durable, dependable plastics, designed to withstand the shipping process for years to come. We offer both heavy duty and light duty pallet boxes.
             </p>
           </div>

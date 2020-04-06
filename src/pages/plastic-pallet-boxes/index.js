@@ -49,16 +49,16 @@ const JSONbuildtime = ({data}) => {
         <section className="section product-cate-page">
           <SEO 
             thisTitleTemplate={`%s | ${cat_text} for sale`}
-            title={`${cat_text}, cheap ${cat_text} for moving`}
-            description = {`Wholesale ${cat_text}, cheap ${cat_text} for sale, make your move as environmentally-friendly as possible`}
+            title={`${cat_text}, cheap ${cat_text}, Ideal for transportation`}
+            description = {`Wholesale ${cat_text}, cheap ${cat_text} for sale, ideal for all your bulk storage requirements, allow for easy access by conventional forklifts or pallet trucks`}
             pathname = {`${cat_link}`}
             image = {the_image}
             position = '2'
-            ratingValue = '4.9'
-            reviewCount = '178'
-            price = '8.19'
-            lowPrice = '4.69'
-            highPrice = '21.39'
+            ratingValue = '4.8'
+            reviewCount = '278'
+            price = '98.19'
+            lowPrice = '80.69'
+            highPrice = '121.39'
           />
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
