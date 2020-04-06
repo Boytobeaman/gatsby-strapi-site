@@ -3,6 +3,7 @@ import 'core-js/es6/set';
 
 import React from "react";
 import { Link } from 'gatsby'
+import Helmet from 'react-helmet'
 import { navigateTo } from "gatsby-link";
 import Layout from '../../components/Layout'
 import { 
@@ -98,6 +99,10 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
+        <Helmet>
+          <title>{`Plastic Pallets Manufacturer & Supplier | Contact us`}</title>
+          <meta name="description" content={`Contact us for best quality plastic pallets at affordable prices from one of the leading suppliers of China, Reliable, economical & low-maintenance loading equipment`} />
+        </Helmet>
         <section className="section">
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
