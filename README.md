@@ -10,6 +10,10 @@ https://www.a.com/cat-three/
 
 ##### step two, generate seometa data and images
 generate seometa data to database
+
+
+// 程序目录learnDoc/node
+// 程序位置buildWebsite
 and get images based on generated json data;
 
 move the json data(cat-one.json,...) and imagas to /content/a.com/ folder
