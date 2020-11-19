@@ -100,7 +100,7 @@ const JSONbuildtime = ({data}) => {
                     key={post.slug}
                   >
                     <div className="col-xs-12">
-                      <Link className="cat-product-link" to={`${post.seo_category_slug}/${post.slug}/`}>
+                      <Link className="cat-product-link" to={`/${post.seo_category_slug}/${post.slug}/`}>
                         <ProductDetailTemplateCat 
                           infodata={post.commonproduct}
                         />
