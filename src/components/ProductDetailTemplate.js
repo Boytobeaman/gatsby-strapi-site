@@ -21,14 +21,6 @@ import {
   kgtolbs, 
   ltogal,
   aliResizeStyle_h_120,
-  aliResizeStyle_w_300,
-  aliResizeStyle_w_400,
-  aliResizeStyle_w_600,
-  aliResizeStyle_w_800,
-  aliResizeStyle_w_900,
-  aliResizeStyle_w_1024,
-  aliResizeStyle_w_1200,
-  contact_url,
   cdn_img_thumbnail
 } from '../utils';
 

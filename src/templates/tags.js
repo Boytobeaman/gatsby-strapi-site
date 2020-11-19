@@ -5,8 +5,7 @@ import { Link, graphql } from 'gatsby';
 import ProductDetailTemplateCat from '../components/ProductDetailTemplateCat';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
-import { menu } from '../utils';
-import Img from 'gatsby-image';
+
 import '../cat-page-style.scss';
 // need to change
 

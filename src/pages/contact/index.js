@@ -4,7 +4,6 @@ import 'core-js/es6/set';
 import React from "react";
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
-import { navigateTo } from "gatsby-link";
 import Layout from '../../components/Layout'
 import { 
   cdn_img_thumbnail,
@@ -16,11 +15,6 @@ import {
 } from '../../utils'
 import InquiryForm from "../../components/InquiryForm";
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
 
 export default class Index extends React.Component {
   constructor(props) {

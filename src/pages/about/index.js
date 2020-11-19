@@ -213,7 +213,7 @@ export default class Index extends React.Component {
                   </div>
                   <div className="answer">
                     To benefit buyers, we can draw up a Alibaba trade assurance order.
-                    Go to <a href="https://shjiajiu.en.alibaba.com/" target="_blank">our Alibaba store</a>
+                    Go to <a href="https://shjiajiu.en.alibaba.com/" target="_blank" rel="noreferrer">our Alibaba store</a>
                   </div>
                 </div>
               </div>

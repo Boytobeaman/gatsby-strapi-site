@@ -9,13 +9,9 @@ import {
   inquiry_api_success_code
 } from '../utils'
 import axios from 'axios';
-import { func } from "prop-types";
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
+
+
 function gtag_report_conversion(url) {
   var callback = function () {
     if (typeof(url) != 'undefined') {

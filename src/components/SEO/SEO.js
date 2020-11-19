@@ -75,7 +75,7 @@ const SEO = ({
         },
       ];
       let ratingRichData;
-      if (position && position == '2'){
+      if (position && position === '2'){
         itemListElement.push({
           "@type": "ListItem",
           item: {

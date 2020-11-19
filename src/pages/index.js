@@ -2,8 +2,7 @@ import 'core-js/es6/map';
 import 'core-js/es6/set';
 
 import React from 'react'
-import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
+
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Slider from '../components/Slider'
@@ -83,7 +82,7 @@ export default class IndexPage extends React.Component {
                 </Link>
               </div>
               <div className="col-sm-3">
-                <a className="nav-link text-white font-weight-bold pb-0" href="https://www.movingboxsale.com/folding-crates/" target="_blank">
+                <a className="nav-link text-white font-weight-bold pb-0" href="https://www.movingboxsale.com/folding-crates/" target="_blank" rel="noreferrer">
                   <Img
                     fluid={img_data.cat_p1.childImageSharp.fluid}
                     alt="Plastic Folding Crates"
@@ -94,7 +93,7 @@ export default class IndexPage extends React.Component {
                 </a>
               </div>
               <div className="col-sm-3">
-              <a className="nav-link text-white font-weight-bold pb-0" href="https://www.movingboxsale.com/moving-bins/" target="_blank">
+              <a className="nav-link text-white font-weight-bold pb-0" href="https://www.movingboxsale.com/moving-bins/" target="_blank" rel="noreferrer">
                 <Img
                   fluid={img_data.cat_p2.childImageSharp.fluid}
                   alt="Plastic Moving Bins"

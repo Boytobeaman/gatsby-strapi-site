@@ -26,19 +26,19 @@ export default class Footer extends React.Component{
           </a>
         </div>
         <div className="friendly-link">
-          <a href="https://www.best-boxes.com/product-category/attached-lid-container/" target="_blank" className="footer-friendly-link">
+          <a href="https://www.best-boxes.com/product-category/attached-lid-container/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
           attached lid distribution containers
           </a>
-          <a href="https://www.plastic-crates.com/product-category/totes-with-lids/" target="_blank" className="footer-friendly-link">
+          <a href="https://www.plastic-crates.com/product-category/totes-with-lids/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
           plastic crates
           </a>
-          <a href="https://www.movingboxsale.com/plastic-pallet-containers/" target="_blank" className="footer-friendly-link">
+          <a href="https://www.movingboxsale.com/plastic-pallet-containers/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
           plastic pallet containers
           </a>
-          <a href="https://www.vegcrates.com/" target="_blank" className="footer-friendly-link">
+          <a href="https://www.vegcrates.com/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
           vegetable crates
           </a>
-          <a href="https://www.chinaboxsale.com/product-category/straight-wall-container/" target="_blank" className="footer-friendly-link">
+          <a href="https://www.chinaboxsale.com/product-category/straight-wall-container/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
           straight wall containers
           </a>
           

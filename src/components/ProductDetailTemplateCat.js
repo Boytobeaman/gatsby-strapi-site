@@ -1,7 +1,6 @@
 
 import React from 'react'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import { useStaticQuery, graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -57,8 +56,6 @@ class ProductDetailTemplateCat extends React.Component {
       volumn,
       weight,
       images,
-      category,
-      post_title_slug
     } = this.props.infodata;
 
     let cat_image_url=''
