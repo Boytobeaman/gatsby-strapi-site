@@ -69,7 +69,7 @@ export default class MainNavbar extends React.Component{
       <Navbar color="dark" dark className="fixed-top border-bottom" expand="md" id="mainNavbar" itemScope='' itemType="http://schema.org/SiteNavigationElement">
         <NavbarBrand className="py-0" href="/">
           <figure className="image mb-0">
-            <img src={logo} alt="moving crates logo" style={{ height: '40px' }} />
+            <img src={logo} alt="moving crates logo" style={{ height: "40px", width:"160px" }} />
           </figure>
         </NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar} />

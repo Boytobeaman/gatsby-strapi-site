@@ -26,8 +26,6 @@ const JSONbuildtime = ({data, pageContext, path}) => {
 
   let img_data = [...palletBoxJsondata, ...palletJsondata];
 
-
-  debugger
   posts = posts.map(item=>item.node);
   img_data = img_data.map(item => item.node)
   posts.forEach(item => {
