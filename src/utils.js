@@ -59,14 +59,14 @@ export const menu = {
     showInUi: false
   },
   pallet:{
-    url: '/plastic-pallets/',
+    url: '/plastic-pallets-for-sale/',
     text: 'Plastic Pallets',
     product_identify_cat: 'pallet',
     showInUi: true
   },
   palletBox:{
-    url: '/plastic-pallet-boxes/',
-    text: 'Plastic Pallet Boxes',
+    url: '/pallet-container/',
+    text: 'Pallet Container',
     product_identify_cat: 'pallet box',
     showInUi: true
   },
@@ -92,4 +92,39 @@ export const getUrlQuery = function (variable) {
 }
 export const getSrcsetBySrc = function (src){
   return `${src}?x-oss-process=image/resize,w_360 360w,${src}?x-oss-process=image/resize,w_650 650w,${src}?x-oss-process=image/resize,w_850 850w,${src}?x-oss-process=image/resize,w_1000 1000w,${src}?x-oss-process=image/resize,w_1200 1200w`
+}
+
+export const footerConfig={
+  friendlyLink:[
+    {
+      href: "https://www.best-boxes.com/product-category/attached-lid-container/",
+      className: "footer-friendly-link",
+      target:"_blank",
+      rel: "noopener",
+      text: "attached lid distribution containers",
+    },
+    {
+      href: "https://www.bulk-containers.com/",
+      className: "footer-friendly-link",
+      target:"_blank",
+      rel: "noopener",
+      text: "bulk plastic containers",
+    },
+    {
+      href: "https://www.vegcrates.com/product-category/vegetable-harvest-crates/",
+      className: "footer-friendly-link",
+      target:"_blank",
+      rel: "noopener",
+      text: "harvest crates",
+    },
+    {
+      href: "https://www.joinplastic.com/product-category/bottle-crate/",
+      className: "footer-friendly-link",
+      target:"_blank",
+      rel: "noopener",
+      text: "plastic beer crates",
+    },
+
+  ],
+  footerCopyright: "© 2020 Shanghai Join Plastic, Inc. All Rights Reserved."
 }

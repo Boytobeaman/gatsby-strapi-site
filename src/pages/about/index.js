@@ -70,7 +70,7 @@ export default class Index extends React.Component {
                 <div>
                   <div className="p-3 bg-white">
                     <h1 className="h4">Who are we?</h1>
-                    <p>At palletssupplier.com, there is a highly professional, hardworking and passionate group of people in the plastic pallet manufacturer and supplier business to serve the shipping, storage, and handling industry as well as the consumer market. 
+                    <p>At plastic-pallets.cn, there is a highly professional, hardworking and passionate group of people in the plastic pallet manufacturer and supplier business to serve the shipping, storage, and handling industry as well as the consumer market. 
                       Our products are exceptional and are ahead of all their competition in terms of price, structure, and durability. 
                       We take pride in being the largest plastic pallet manufacturer in China in serving our customers with the best quality plastic pallets and a similar variety of products that the market has to offer.
                     </p>

@@ -5,7 +5,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   const result = await graphql(
     `
       {
-        products: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "palletssupplier.com"}}}) {
+        products: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "plastic-pallets.cn"}}}) {
           edges {
             node {
               id

@@ -11,7 +11,7 @@ module.exports = {
     titleTemplate: '%s | Pallets Supplier',
     description:
       'Wholesale plastic boxes, pallet boxes, dollies, plastic crates and containers directly from factory, quick LEAD time, high quality',
-    siteUrl: `https://www.palletssupplier.com`,
+    siteUrl: `https://www.plastic-pallets.cn`,
     image: `/img/home/main-slider-nesting-crates.jpg`,
     owner: '',
     twitterUsername: '@PalletBoxSale',
@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content/palletssupplier.com`
+        path: `${__dirname}/content/plastic-pallets.cn`
       },
     },
     {

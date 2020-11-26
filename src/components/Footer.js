@@ -2,7 +2,8 @@ import React from 'react'
 import { 
   contact_email,
   facebook_url,
-  twitter_url
+  twitter_url,
+  footerConfig
 } from '../utils'
 import footerLogo from '../img/logo-stack.png'
 
@@ -26,25 +27,17 @@ export default class Footer extends React.Component{
           </a>
         </div>
         <div className="friendly-link">
-          <a href="https://www.best-boxes.com/product-category/attached-lid-container/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
-          attached lid distribution containers
-          </a>
-          <a href="https://www.plastic-crates.com/product-category/totes-with-lids/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
-          plastic crates
-          </a>
-          <a href="https://www.movingboxsale.com/plastic-pallet-containers/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
-          plastic pallet containers
-          </a>
-          <a href="https://www.vegcrates.com/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
-          vegetable crates
-          </a>
-          <a href="https://www.chinaboxsale.com/product-category/straight-wall-container/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
-          straight wall containers
-          </a>
-          
+          {footerConfig.friendlyLink && (
+            <>
+              {footerConfig.friendlyLink.map( item => {
+                let {text, ...attr} = item;
+                return <a {...attr}>{ text }</a>
+              })}
+            </>
+          )}
         </div>
         <div className="copy-right text-center py-3 px-1">
-          <span className="text-white">© 2020 Shanghai Join Plastic, Inc. All Rights Reserved.</span>
+        <span className="text-white">{footerConfig.footerCopyright ? footerConfig.footerCopyright : ""}</span>
         </div>
       </footer>
     )
