@@ -26,18 +26,18 @@ export default class MainNavbar extends React.Component{
       collapsed: !this.state.collapsed
     });
   }
-  componentWillMount(){
-    let parentLevelLink = this.props.parentLevelLink;
-    let this_parent_url = parentLevelLink
-      for (let elem in menu) {
-        let this_url = menu[elem].url
-        if(this_url === this_parent_url){
-          menu[elem].activeStatus = "active"
-        }else{
-          menu[elem].activeStatus = ""
-        }
-      }
-  }
+  // componentWillMount(){
+  //   let parentLevelLink = this.props.parentLevelLink;
+  //   let this_parent_url = parentLevelLink
+  //     for (let elem in menu) {
+  //       let this_url = menu[elem].url
+  //       if(this_url === this_parent_url){
+  //         menu[elem].activeStatus = "active"
+  //       }else{
+  //         menu[elem].activeStatus = ""
+  //       }
+  //     }
+  // }
   renderNavbar(){
 
     return Object.keys(menu).map(function(key) {
