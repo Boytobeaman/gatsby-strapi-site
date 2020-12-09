@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { CusLink } from './cusLink'
 import logo from '../img/header-icon-grey.png'
 import { menu } from '../utils'
 import {
@@ -46,18 +46,18 @@ export default class MainNavbar extends React.Component{
       if(this_url === "/"){
         return (
           <NavItem key={key}>
-            <Link className="nav-link" to="/" title="Home">
+            <CusLink className="nav-link" to="/" title="Home">
               Home
-            </Link>
+            </CusLink>
           </NavItem>
         )
       }else{
         if(this_menu.showInUi){
           return (
             <NavItem key={key}>
-              <Link className={`nav-link ${this_menu.activeStatus}`} to={this_menu.url} title={this_menu.text}>
+              <CusLink className={`nav-link ${this_menu.activeStatus}`} to={this_menu.url} title={this_menu.text}>
                   {this_menu.text}
-                </Link>
+              </CusLink>
             </NavItem>
           )
         }
