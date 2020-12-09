@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 const isActiveWrap = (props) => {
-  const isActive = ({ obj }) => {
+  const isActive = (obj) => {
 
     let activeClassName = 'active'
     if(props.className){
