@@ -55,7 +55,7 @@ export default class MainNavbar extends React.Component{
         if(this_menu.showInUi){
           return (
             <NavItem key={key}>
-              <CusLink className={`nav-link ${this_menu.activeStatus}`} to={this_menu.url} title={this_menu.text}>
+              <CusLink className={`nav-link`} to={this_menu.url} title={this_menu.text}>
                   {this_menu.text}
               </CusLink>
             </NavItem>
