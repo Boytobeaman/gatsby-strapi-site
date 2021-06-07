@@ -23,7 +23,7 @@
     "gatsby-plugin-sharp": "^2.3.10",
     "gatsby-plugin-sitemap": "^2.2.24",
     "gatsby-source-filesystem": "^2.1.43",
-    "gatsby-source-strapi": "^0.0.11",
+    "gatsby-source-strapi": "^0.0.12",
     "gatsby-transformer-json": "^2.2.22",
     "gatsby-transformer-sharp": "^2.3.9",
     "lodash": "^4.17.15",
