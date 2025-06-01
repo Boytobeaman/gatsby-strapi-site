@@ -44,8 +44,8 @@ export const menu = {
     text: 'Home'
   },
   foldingCrate:{
-    url: '/collapsible-crates/',
-    text: 'Collapsible Crates',
+    url: '/folding-plastic-box/',
+    text: 'Folding Plastic Box',
     product_identify_cat: 'folding crate'
   },
   nestingBox:{
@@ -54,13 +54,13 @@ export const menu = {
     product_identify_cat: 'nesting box'
   },
   stackingCrate:{
-    url: '/straight-wall-containers/',
-    text: 'Straight Wall Containers',
+    url: '/euro-containers/',
+    text: 'Euro Containers',
     product_identify_cat: 'stacking crate'
   },
   palletBox:{
-    url: '/plastic-pallet-boxes/',
-    text: 'Plastic Pallet Boxes',
+    url: '/bulk-containers-wholesale/',
+    text: 'Bulk Containers',
     product_identify_cat: 'pallet box'
   },
   contact:{

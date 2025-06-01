@@ -19,14 +19,14 @@ export default class IndexPage extends React.Component {
     let items = [
       {
         childImageSharp: img_data.p1.childImageSharp,
-        altText: 'Attached Lid Container',
+        altText: menu.nestingBox.text,
         caption: '',
         link_to: menu.nestingBox.url,
         key: 1
       },
       {
         childImageSharp: img_data.p2.childImageSharp,
-        altText: 'Folding Crates',
+        altText: menu.foldingCrate.text,
         caption: '',
         link_to: menu.foldingCrate.url,
         key: 2
@@ -43,9 +43,9 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO 
-            titleTemplate="%s | Moving boxes"
-            title='Moving Bins For Sale, Plastic Moving Boxes Manufacturer & Supplier'
-            description = 'JOINPLASTIC is a Plastic Crate manufacturers and suppliers from China,we wholesale a wide range of products which include plastic moving boxes, collapsible plastic crates, fruits crate, stacking crates, attached lid containers, heavy duty crates, pallets, dollies'
+            titleTemplate="%s | Bulk Plastic Containers"
+            title='Bulk Plastic Containers for sale, Plastic Pallet Containers Manufacturer & Supplier'
+            description = {`Choose Bulk Plastic Containers, Plastic Pallet Containers, Collapsible bulk containers of all kinds and sizes. Best Prices, ${menu.foldingCrate.text}, ${menu.nestingBox.text}, ${menu.stackingCrate.text}, ${menu.palletBox.text}, pallets`}
           />
         <div className="home-page">
           <section className="section">
@@ -98,6 +98,10 @@ export default class IndexPage extends React.Component {
                   <p className="home-page-cat-text text-center">
                     Plastic Pallet Boxes
                   </p>
+                  <div className="d-none">
+                    each reusable container is designed to protect your product and reduce handling costs.
+                    containers are available in light-duty, medium-duty and heavy-duty designs to meet any requirement.
+                  </div>
                 </Link>
               </div>
             </div>

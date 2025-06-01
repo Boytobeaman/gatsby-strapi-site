@@ -11,8 +11,8 @@ module.exports = {
     titleTemplate: '%s | Moving bins wholesale',
     description:
       'Wholesale plastic boxes, pallet boxes, dollies, plastic crates and containers directly from factory, quick LEAD time, high quality',
-    siteUrl: `https://www.uspalletbox.com`,
-    image: `/img/main-slider-nesting-crates.jpg`,
+    siteUrl: `https://www.bulk-containers.com`,
+    image: `/img/home/main-slider-nesting-crates.jpg`,
     owner: '',
     twitterUsername: '@PalletBoxSale',
     facebookAppID: '',
@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content/uspalletbox.com`
+        path: `${__dirname}/content/bulk-containers.com`
       },
     },
     {
@@ -50,7 +50,7 @@ module.exports = {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: process.env.API_URL || "http://customer.50d.top",
-        contentTypes: [
+        collectionTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
           "websiteseometa",
         ],

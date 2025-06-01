@@ -26,21 +26,22 @@ export default class Footer extends React.Component{
           </a>
         </div>
         <div className="friendly-link">
-          <a href="https://www.storage-totes.com/" target="_blank" className="footer-friendly-link">
-            plastic storage totes
+          <a href="https://www.best-boxes.com/product-category/attached-lid-container/" target="_blank" className="footer-friendly-link">
+            plastic shipping containers with attached lids
           </a>
-          <a href="https://www.vegcrates.com/" target="_blank" className="footer-friendly-link">
-            plastic vegetable crates manufacturers
+          <a href="https://www.plastic-crates.com/product-category/totes-with-lids/" target="_blank" className="footer-friendly-link">
+          plastic totes with lids
           </a>
-          <a href="https://www.chinaboxsale.com/product-category/bulk-plastic-containers/" target="_blank" className="footer-friendly-link">
-           Bulk Plastic Containers
+          <a href="https://www.ausplastic.com/product-category/euro-storage-boxes/" target="_blank" className="footer-friendly-link">
+            euro containers 600x400
           </a>
           <a href="https://www.plastic-crate.com/" target="_blank" className="footer-friendly-link">
             plastic moving crates
           </a>
-          <a href="https://www.ausplastic.com/product-category/euro-storage-boxes/" target="_blank" className="footer-friendly-link">
-            euro stacking boxes
+          <a href="https://www.storage-totes.com/product-category/collapsible-storage-bins/" target="_blank" className="footer-friendly-link">
+          collapsible storage bins
           </a>
+          
         </div>
         <div className="copy-right text-center py-3 px-1">
           <span className="text-white">© 2025 Shanghai Join Plastic, Inc. All Rights Reserved.</span>

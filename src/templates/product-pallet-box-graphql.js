@@ -32,6 +32,7 @@ const ProductPost = (props) => {
         content={post.description}
         contentComponent={HTMLContent}
         description={post.description}
+        backlinks={post.backlinks}
         model={commonproduct.model}
         external_long={commonproduct.external_long}
         external_width={commonproduct.external_width}

@@ -2,11 +2,11 @@ const _ = require('lodash');
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
 
-  let domain_name = 'uspalletbox.com'
+  let domain_name = 'bulk-containers.com'
   const result = await graphql(
     `
       {
-        products: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "uspalletbox.com"}}}) {
+        products: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "bulk-containers.com"}}}) {
           edges {
             node {
               id
@@ -29,7 +29,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
 
   // Create blog products pages.
   const products = result.data.products.edges
-  // console.log(`products ================= ${JSON.stringify(products)}`)
+  console.log(`got products number ================= ${products.lenght}`)
 
   
   // let allPalletBoxJsonResult = await graphql(`

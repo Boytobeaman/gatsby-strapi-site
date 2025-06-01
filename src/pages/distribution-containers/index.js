@@ -99,7 +99,7 @@ const JSONbuildtime = ({data}) => {
                     key={post.slug}
                   >
                     <div className="col-xs-12">
-                      <Link className="cat-product-link" to={`${post.seo_category_slug}/${post.slug}/`}>
+                      <Link className="cat-product-link" to={`/${post.seo_category_slug}/${post.slug}/`}>
                         <ProductDetailTemplateCat 
                           infodata={post.commonproduct}
                         />
@@ -123,7 +123,7 @@ export default JSONbuildtime
 // need to change domain and product_identify_cat
 export const query = graphql`
   query{
-    strapidata: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "uspalletbox.com"}}, product_identify_cat: {eq: "nesting box"}}) {
+    strapidata: allStrapiWebsiteseometa(filter: {domain: {name: {eq: "bulk-containers.com"}}, product_identify_cat: {eq: "nesting box"}}) {
       edges {
         node {
           id
