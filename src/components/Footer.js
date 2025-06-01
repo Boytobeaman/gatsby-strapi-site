@@ -35,11 +35,8 @@ export default class Footer extends React.Component{
           <a href="https://www.ausplastic.com/product-category/euro-storage-boxes/" target="_blank" className="footer-friendly-link">
             euro containers 600x400
           </a>
-          <a href="https://www.movingboxsale.com/plastic-pallet-containers/" target="_blank" className="footer-friendly-link">
-          plastic storage pallet box
-          </a>
-          <a href="https://www.vegcrates.com/" target="_blank" className="footer-friendly-link">
-          vegetable storage crates
+          <a href="https://www.plastic-crate.com/" target="_blank" className="footer-friendly-link">
+            plastic moving crates
           </a>
           <a href="https://www.storage-totes.com/product-category/collapsible-storage-bins/" target="_blank" className="footer-friendly-link">
           collapsible storage bins
@@ -48,6 +45,7 @@ export default class Footer extends React.Component{
         </div>
         <div className="copy-right text-center py-3 px-1">
           <span className="text-white">© 2025 Shanghai Join Plastic, Inc. All Rights Reserved.</span>
+          <p className="text-white">From storage to transport, our plastic crates deliver strength, durability, and peace of mind</p>
         </div>
       </footer>
     )
