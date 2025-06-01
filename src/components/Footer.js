@@ -41,16 +41,13 @@ export default class Footer extends React.Component{
           <a href="https://www.vegcrates.com/" target="_blank" className="footer-friendly-link">
           vegetable storage crates
           </a>
-          <a href="https://www.chinaboxsale.com/product-category/straight-wall-container/" target="_blank" className="footer-friendly-link">
-          straight wall containers
-          </a>
           <a href="https://www.storage-totes.com/product-category/collapsible-storage-bins/" target="_blank" className="footer-friendly-link">
           collapsible storage bins
           </a>
           
         </div>
         <div className="copy-right text-center py-3 px-1">
-          <span className="text-white">© 2020 Shanghai Join Plastic, Inc. All Rights Reserved.</span>
+          <span className="text-white">© 2025 Shanghai Join Plastic, Inc. All Rights Reserved.</span>
         </div>
       </footer>
     )
