@@ -49,8 +49,8 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.API_URL || "http://customer.50d.top",
-        contentTypes: [
+        apiURL: process.env.API_URL || "https://customer.50d.top",
+        collectionTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
           "websiteseometa",
         ],
