@@ -1,0 +1,85 @@
+import React from "react"
+import { Link } from "gatsby"
+import Helmet from "react-helmet"
+import Layout from '../../components/Layout'
+
+const posts = [
+  {
+    title: "Plastic Pallet Specifications, Sizes, and Dimensions Guide",
+    slug: "/insights/plastic-pallet-specifications-sizes-and-dimensions-guide/",
+    date: "2025-10-19",
+    excerpt:
+      "Quick reference for common plastic pallet specifications, standard sizes, typical load capacities, and how to choose the right pallet.",
+    tags: [
+      "plastic pallet specifications",
+      "plastic pallet size",
+      "plastic pallet dimensions",
+    ],
+  },
+  // add more insights here
+]
+
+const InsightsIndex = () => (
+  <Layout>
+    <Helmet>
+      <title>Insights — Pallets Supplier</title>
+      <meta name="description" content="News and product knowledge about plastic pallets, sizes, specs and dimensions." />
+      <meta name="keywords" content="plastic pallet specifications, plastic pallet size, plastic pallet dimensions" />
+    </Helmet>
+    
+    <section className="section">
+      <div className="container-fluid">
+        <nav aria-label="breadcrumb">
+          <ol className="breadcrumb bg-white my-2">
+            <li className="breadcrumb-item">
+              <Link to="/">
+                Home
+              </Link>
+            </li>
+            <li className="breadcrumb-item active" aria-current="page">Insights</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <div className="container-fluid">
+      <section className='mb-5 border bg-light'>
+        <div className="p-3 bg-white">
+          <h1 className="h4">Insights</h1>
+          <p className="text-muted">
+            Product news, guides and knowledge about plastic pallets and pallet boxes.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div className="container-fluid">
+      <section className='mb-5'>
+        {posts.map(post => (
+          <article key={post.slug} className="mb-4 p-3 border bg-light">
+            <h2 className="h5 mb-2">
+              <Link to={post.slug} className="text-primary text-decoration-none">
+                {post.title}
+              </Link>
+            </h2>
+            <div className="text-muted small mb-2">{post.date}</div>
+            <p className="mb-2">{post.excerpt}</p>
+            <div>
+              {post.tags.map(tag => (
+                <span
+                  key={tag}
+                  className="badge bg-primary me-1"
+                  style={{ fontSize: "0.75rem" }}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </article>
+        ))}
+      </section>
+    </div>
+  </Layout>
+)
+
+export default InsightsIndex

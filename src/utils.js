@@ -79,6 +79,11 @@ export const menu = {
     text: 'Contact',
     showInUi: true
   },
+  insights:{
+    url: '/insights/',
+    text: 'Insights',
+    showInUi: true
+  },
   about:{
     url: '/about/',
     text: 'About',
