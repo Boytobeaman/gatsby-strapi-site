@@ -32,9 +32,6 @@ export default class Footer extends React.Component{
           <a href="https://www.plastic-crates.com/product-category/totes-with-lids/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
           plastic crates
           </a>
-          <a href="https://www.movingboxsale.com/plastic-pallet-containers/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
-          plastic pallet containers
-          </a>
           <a href="https://www.vegcrates.com/" rel="nofollow noopener" target="_blank" className="footer-friendly-link">
           vegetable crates
           </a>
@@ -44,7 +41,7 @@ export default class Footer extends React.Component{
           
         </div>
         <div className="copy-right text-center py-3 px-1">
-          <span className="text-white">© 2025 Shanghai Join Plastic, Inc. All Rights Reserved.</span>
+          <span className="text-white">© 2025 palletssupplier.com, Inc. All Rights Reserved.</span>
         </div>
       </footer>
     )
