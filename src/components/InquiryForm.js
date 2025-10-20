@@ -90,7 +90,7 @@ export default class InquiryForm extends React.Component {
       })
     })
     .then((res) => {
-      if(res.data && res.data?.id){
+      if(res.status >= 200 && res.status < 300){
         _this.setState({ 
           showThanks: true
          });
