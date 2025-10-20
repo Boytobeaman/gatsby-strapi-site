@@ -207,15 +207,6 @@ export default class Index extends React.Component {
                     7~15 working days after we receive your deposit.
                   </div>
                 </div>
-                <div className="question-wrap">
-                  <div className="question">
-                    How can I protect my rights if we meet quality issue?
-                  </div>
-                  <div className="answer">
-                    To benefit buyers, we can draw up a Alibaba trade assurance order.
-                    Go to <a href="https://shjiajiu.en.alibaba.com/" target="_blank" rel="noreferrer">our Alibaba store</a>
-                  </div>
-                </div>
               </div>
             </div>
           </section>
