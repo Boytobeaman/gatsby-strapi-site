@@ -136,7 +136,7 @@ export default class Index extends React.Component {
                   <div className="mb-1">
                     <ul className="list-group">
                       <li className="list-group-item">
-                        Add customer logo on the crate.
+                        Add customer logo on the pallet or crate.
                       </li>
                       <li className="list-group-item">
                         We could customize color for the crate, regular color is blue, grey.
@@ -153,25 +153,25 @@ export default class Index extends React.Component {
                     <p className="mb-0">Anting county,Jiading District, Shanghai, China</p>
                   </div>
                   
-                  <h5>Call us: </h5>
+                  {/* <h5>Call us: </h5>
                   <div className="alert alert-secondary" role="alert">
                     <p className="mb-0">{contact_phone_one}</p>
                     <p className="mb-0">{contact_phone_two}</p>
-                  </div>
+                  </div> */}
                   
                   
-                  <h5>Email: </h5>
+                  {/* <h5>Email: </h5>
                   <p>
                     <a className="btn btn-secondary" href={`mailto:${contact_email}?subject=Inquiry about your plastic crate`}>{contact_email}</a>
-                  </p>
+                  </p> */}
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <div className="col">
                   If you have any concerns or queries related to our products or our work, kindly contact us via the email address provided. 
                   You can also call us on our phone number, during work hours. We will come in contact with you as soon as possible
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

@@ -15,7 +15,7 @@ export const contact_phone_one = '(+86)021-59117621';
 export const contact_phone_two = '(+86)13671889020';
 export const facebook_url = 'https://www.facebook.com/movingbox.sale.1';
 export const twitter_url = 'https://twitter.com/movingboxsale';
-export const cdn_url = 'https://cdn.movingboxsale.com';
+export const cdn_url = 'https://cdn.palletssupplier.com';
 export const cdn_loading_img = `${cdn_url}/static/loading.gif`;
 export const cdn_img_thumbnail = `${cdn_url}/static/noimage_thumbnail.png`;
 export const aliResizeStyle_h_20 = '?x-oss-process=image/resize,h_20';
