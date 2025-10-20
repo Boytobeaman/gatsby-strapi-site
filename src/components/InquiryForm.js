@@ -98,7 +98,7 @@ export default class InquiryForm extends React.Component {
         // navigateTo(form.getAttribute("action"));
         console.log(`send email successfully to ${contact_email}`)
       }else{
-        alert(res.data.msg)
+        alert(`Failed to send email, you can manually send email to ${contact_email}`)
       }
      
     })
@@ -123,7 +123,8 @@ export default class InquiryForm extends React.Component {
       if(res.data && res.data?.id){
         console.log(`saved in handle inquiry database`)
       }else{
-        console.error(res.data.msg)
+        
+        alert(`Failed to send email, you can manually send email to ${contact_email}`)
       }
       
     })
