@@ -70,13 +70,13 @@ export default class Index extends React.Component {
                 <div>
                   <div className="p-3 bg-white">
                     <h1 className="h4">Who are we?</h1>
-                    <p>At palletssupplier.com, there is a highly professional, hardworking and passionate group of people in the plastic pallet manufacturer and supplier business to serve the shipping, storage, and handling industry as well as the consumer market. 
-                      Our products are exceptional and are ahead of all their competition in terms of price, structure, and durability. 
-                      We take pride in being the largest plastic pallet manufacturer in China in serving our customers with the best quality plastic pallets and a similar variety of products that the market has to offer.
+                    <p>At palletssupplier.com, we are proud to combine innovation, automation, and experience in the plastic pallet manufacturing industry. Our factory is equipped with state-of-the-art automatic production lines, including advanced robotic arms and high-capacity injection molding systems, ensuring precise molding, consistent quality, and efficient mass production of plastic pallets.
                     </p>
                     <p>
-                      Customer satisfaction is our number one priority, we have dedicated ourselves to provide the finest class goods by going above and beyond. 
-                      Please feel free to look around our website and browse through the products we have to offer.
+                      Our professional, hardworking, and passionate team is dedicated to serving the shipping, storage, logistics, and material handling industries with reliable and durable pallet solutions. Through automated production technology, we achieve superior consistency, faster turnaround times, and more competitive prices — giving our customers the best value in the market.
+                    </p>
+                    <p>
+                      As one of the largest plastic pallet manufacturers in China, we take pride in offering a wide range of pallet designs and specifications to meet different industrial needs. Customer satisfaction remains our top priority, and we continue to go above and beyond to provide first-class products and services.
                     </p>
                   </div>
                 </div>
