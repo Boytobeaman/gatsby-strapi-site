@@ -120,7 +120,7 @@ export default class InquiryForm extends React.Component {
       })
     })
     .then((res) => {
-      if(res.data && res.data?.id){
+      if(res.status >= 200 && res.status < 300){
         console.log(`saved in handle inquiry database`)
       }else{
         
@@ -215,7 +215,7 @@ export default class InquiryForm extends React.Component {
                 <div className="mt-1 bg-light rounded shadow-lg">
                   <div className="alert alert-success" role="alert">
                       <h4>Thank you!</h4>
-                      <p className="mb-1">Email had been sent to <span className="font-weight-bold">{contact_email || 'seller006@joinplastic.com'}</span></p>
+                      {/* <p className="mb-1">Email had been sent to <span className="font-weight-bold">{contact_email || 'seller006@joinplastic.com'}</span></p> */}
                       <p>We will check the email and come back to you as soon as possible!</p>
                   </div>
                 </div>
