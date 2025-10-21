@@ -4,7 +4,7 @@ import {
   facebook_url,
   twitter_url
 } from '../utils'
-import footerLogo from '../img/logo-stack.png'
+import footerLogo from '../img/header-pallet-icon-640.png'
 
 export default class Footer extends React.Component{
 
