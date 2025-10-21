@@ -198,7 +198,7 @@ export default class IndexPage extends React.Component {
 export const query = graphql`
   query{
     # need to change the file path
-    p1: file(relativePath: {eq: "home/main-slider-plastic-pallets.png"}) {
+    p1: file(relativePath: {eq: "home/main-slider-plastic-pallet-banner-25-10.jpg"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
