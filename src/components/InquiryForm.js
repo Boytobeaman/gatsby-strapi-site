@@ -88,6 +88,10 @@ export default function InquiryForm() {
       }
     });
 
+    // cf-turnstile-response is in formValues and is the default field name for turnstile token
+    // the value will be handled by backend as turnstileToken
+    // or we can get the value and use the field name turnstileToken
+
     return {
       ...formValues,
       product_model: productModel,
@@ -97,7 +101,6 @@ export default function InquiryForm() {
       to_email: toEmail,
       company_name,
       remote_ip: remoteIp,
-      turnstileToken: window.cfTurnstileGetToken ? window.cfTurnstileGetToken() : ''
     };
   };
 
@@ -130,7 +133,7 @@ export default function InquiryForm() {
 
     const payload = collectFormState();
     // Check for Turnstile token
-    if (!payload.turnstileToken) {
+    if (!payload["cf-turnstile-response"] && !payload["turnstileToken"]) {
       alert('Please complete the CAPTCHA verification');
       return;
     }
