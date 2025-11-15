@@ -46,13 +46,17 @@ export default function InquiryForm() {
       .catch(() => {});
   }, []);
 
-  useEffect(async () => {
-
-    await Promise.race(
-      window.turnstileReady, // Promise object set by the plugin
-      new Promise(res => setTimeout(res, 1000)),
-    );
-    setReady(true);
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const init = async () => {
+      await Promise.race([
+        // if turnstileReady isn't set, fall back immediately so Promise.race still gets a promise
+        window.turnstileReady || new Promise(res => setTimeout(res, 0)),
+        new Promise(res => setTimeout(res, 1000)), // fallback after 1s
+      ]);
+      setReady(true);
+    };
+    init();
   }, []);
 
   const handleChange = (e) => {
