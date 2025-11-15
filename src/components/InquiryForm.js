@@ -13,7 +13,9 @@ import { useTurnstileSiteKey } from 'gatsby-plugin-turnstile/src';
 
 export default function InquiryForm() {
   const siteKey = useTurnstileSiteKey();
-  const [ready, setReady] = useState(false);
+  // const [ready, setReady] = useState(false);
+  const [token, setToken] = useState('');
+  console.log(`token ====== ${token}`);
 
   const [productModel, setProductModel] = useState('');
   const [productQuantity, setProductQuantity] = useState('');
@@ -47,16 +49,28 @@ export default function InquiryForm() {
   }, []);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const init = async () => {
-      await Promise.race([
-        // if turnstileReady isn't set, fall back immediately so Promise.race still gets a promise
-        window.turnstileReady || new Promise(res => setTimeout(res, 0)),
-        new Promise(res => setTimeout(res, 1000)), // fallback after 1s
-      ]);
-      setReady(true);
+    if (typeof window === "undefined") return;
+
+    const container = document.getElementById("turnstile-container");
+    if (!container) return;
+
+    // load script dynamically
+    const script = document.createElement("script");
+    script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+    script.async = true;
+    script.defer = true;
+
+    script.onload = () => {
+      if (window.turnstile) {
+        window.turnstile.render("#turnstile-container", {
+          sitekey: siteKey,
+          callback: setToken,
+        });
+      }
     };
-    init();
+
+    document.body.appendChild(script);
+
   }, []);
 
   const handleChange = (e) => {
@@ -301,9 +315,7 @@ export default function InquiryForm() {
                   />
                 </div>
               </div>
-              {ready && (
-                <div className="cf-turnstile" data-sitekey={siteKey}></div>
-              )}
+              <div id="turnstile-container"></div>
 
               <div className="field form-group mb-0">
                 <button className="button btn btn-danger is-link" type="submit">
