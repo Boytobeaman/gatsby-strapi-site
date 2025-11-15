@@ -22,7 +22,6 @@
     "gatsby-plugin-sass": "^5.11.0",
     "gatsby-plugin-sharp": "^4.11.0",
     "gatsby-plugin-sitemap": "^5.11.0",
-    "gatsby-plugin-turnstile": "^1.1.1",
     "gatsby-source-filesystem": "^4.11.0",
     "gatsby-source-strapi": "^1.0.3",
     "gatsby-transformer-json": "^4.11.0",

@@ -19,6 +19,7 @@ export const twitter_url = 'https://twitter.com/movingboxsale';
 export const cdn_url = 'https://cdn.movingboxsale.com';
 export const cdn_loading_img = `${cdn_url}/static/loading.gif`;
 export const cdn_img_thumbnail = `${cdn_url}/static/noimage_thumbnail.png`;
+export const CLOUDFLARE_TURNSTILE_SITE_KEY='0x4AAAAAAB_3PZLK4k1Ns1h6';
 export const aliResizeStyle_h_20 = '?x-oss-process=image/resize,h_20';
 export const aliResizeStyle_h_60 = '?x-oss-process=image/resize,h_60';
 export const aliResizeStyle_h_80 = '?x-oss-process=image/resize,h_80';

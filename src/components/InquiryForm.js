@@ -6,16 +6,13 @@ import {
   inquiry_handle_app_name,
   inquiry_handle_inquiry_and_email_url,
   remote_ip_url,
-  company_name
+  company_name,
+  CLOUDFLARE_TURNSTILE_SITE_KEY
 } from '../utils'
 import axios from 'axios';
-import { useTurnstileSiteKey } from 'gatsby-plugin-turnstile/src';
 
 export default function InquiryForm() {
-  const siteKey = useTurnstileSiteKey();
-  // const [ready, setReady] = useState(false);
   const [token, setToken] = useState('');
-  console.log(`token ====== ${token}`);
 
   const [productModel, setProductModel] = useState('');
   const [productQuantity, setProductQuantity] = useState('');
@@ -63,7 +60,7 @@ export default function InquiryForm() {
     script.onload = () => {
       if (window.turnstile) {
         window.turnstile.render("#turnstile-container", {
-          sitekey: siteKey,
+          sitekey: CLOUDFLARE_TURNSTILE_SITE_KEY,
           callback: setToken,
         });
       }
