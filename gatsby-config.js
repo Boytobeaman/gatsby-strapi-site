@@ -25,12 +25,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-turnstile',
-      options: {
-        siteKey: process.env.CLOUDFLARE_TURNSTILE_SITE_KEY, // Use environment variable for security
-      },
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/palletssupplier.com`
