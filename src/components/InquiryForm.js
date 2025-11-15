@@ -13,6 +13,7 @@ import { useTurnstileSiteKey } from 'gatsby-plugin-turnstile/src';
 
 export default function InquiryForm() {
   const siteKey = useTurnstileSiteKey();
+  const [ready, setReady] = useState(false);
 
   const [productModel, setProductModel] = useState('');
   const [productQuantity, setProductQuantity] = useState('');
@@ -43,6 +44,12 @@ export default function InquiryForm() {
         }
       })
       .catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.turnstile) {
+      setReady(true);
+    }
   }, []);
 
   const handleChange = (e) => {
@@ -287,7 +294,9 @@ export default function InquiryForm() {
                   />
                 </div>
               </div>
-              <div className="cf-turnstile" data-sitekey={siteKey}></div>
+              {ready && (
+                <div className="cf-turnstile" data-sitekey={siteKey}></div>
+              )}
 
               <div className="field form-group mb-0">
                 <button className="button btn btn-danger is-link" type="submit">
