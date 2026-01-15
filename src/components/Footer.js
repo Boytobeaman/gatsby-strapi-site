@@ -41,7 +41,7 @@ export default class Footer extends React.Component{
           
         </div>
         <div className="copy-right text-center py-3 px-1">
-          <span className="text-white">© 2025 palletssupplier.com, Inc. All Rights Reserved.</span>
+          <span className="text-white">© 2026 palletssupplier.com, Inc. All Rights Reserved.</span>
         </div>
       </footer>
     )

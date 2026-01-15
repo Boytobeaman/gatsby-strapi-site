@@ -185,7 +185,7 @@ export const query = graphql`
       }
     }
     # need to change the file path
-    bannerDesktop: file(relativePath: {eq: "plastic-pallets-factory-display.png"}) {
+    bannerDesktop: file(relativePath: {eq: "plastic-pallets-factory-display.jpg"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
