@@ -5,6 +5,19 @@ import Layout from '../../components/Layout'
 
 const posts = [
   {
+    title: "How Much Weight Can a Pallet Hold?",
+    slug: "/insights/how-much-weight-can-a-pallet-hold/",
+    date: "2025-10-20",
+    excerpt:
+      "Learn about pallet load capacity—static, dynamic, and racking ratings. Understand weight limits for wooden, plastic, and metal pallets.",
+    tags: [
+      "pallet weight capacity",
+      "pallet load capacity",
+      "static load",
+      "dynamic load",
+    ],
+  },
+  {
     title: "Plastic Pallet Specifications, Sizes, and Dimensions Guide",
     slug: "/insights/plastic-pallet-specifications-sizes-and-dimensions-guide/",
     date: "2025-10-19",
