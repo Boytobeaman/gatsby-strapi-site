@@ -95,7 +95,6 @@ const JSONbuildtime = ({data}) => {
                 let short_title = post.short_title
                 post.commonproduct.short_title = short_title
                 post.commonproduct.images = post.images
-                debugger
                 
                 return (
                   <div

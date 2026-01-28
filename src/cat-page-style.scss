@@ -167,6 +167,10 @@
   }
 }
 
+  .border-right.border-white {
+    border-right: 1px solid;
+    }
+
 @media screen and (max-width: 1000px) and (min-width: 768px){
     .product-attributes .product-val-inch span:first-child, 
     .product-attributes .product-val-mm span:first-child {
