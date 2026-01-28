@@ -27,13 +27,12 @@ const JSONbuildtime = ({data, pageContext, path}) => {
   let img_data = [...palletBoxJsondata, ...palletJsondata];
 
 
-  debugger
   posts = posts.map(item=>item.node);
   img_data = img_data.map(item => item.node)
   posts.forEach(item => {
     let local_img = img_data.filter(i_data => i_data.seo_meta_slug === item.slug)[0].local_img;
     item.local_img = local_img
-  	if (item.local_img.length>0) {
+  	if (item?.local_img.length>0) {
   		item.images = item.local_img.map(local_img_item=>local_img_item.path.childImageSharp)
   	}
   })
