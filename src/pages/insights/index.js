@@ -56,41 +56,38 @@ const InsightsIndex = () => (
     </section>
 
     <div className="container-fluid">
-      <section className='mb-5 border bg-light'>
-        <div className="p-3 bg-white">
+      <div className='mb-5 border p-3 bg-white'>
+        <div className="mb-2">
           <h1 className="h4">Insights</h1>
           <p className="text-muted">
             Product news, guides and knowledge about plastic pallets and pallet boxes.
           </p>
         </div>
-      </section>
-    </div>
-
-    <div className="container-fluid">
-      <section className='mb-5'>
-        {posts.map(post => (
-          <article key={post.slug} className="mb-4 p-3 border bg-light">
-            <h2 className="h5 mb-2">
-              <Link to={post.slug} className="text-primary text-decoration-none">
-                {post.title}
-              </Link>
-            </h2>
-            <div className="text-muted small mb-2">{post.date}</div>
-            <p className="mb-2">{post.excerpt}</p>
-            <div>
-              {post.tags.map(tag => (
-                <span
-                  key={tag}
-                  className="badge bg-primary me-1"
-                  style={{ fontSize: "0.75rem" }}
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </article>
-        ))}
-      </section>
+        <div className='post-list'>
+          {posts.map(post => (
+            <article key={post.slug} className="mb-4 p-3 border bg-light">
+              <h2 className="h5 mb-2">
+                <Link to={post.slug} className="text-primary text-decoration-none">
+                  {post.title}
+                </Link>
+              </h2>
+              <div className="text-muted small mb-2">{post.date}</div>
+              <p className="mb-2">{post.excerpt}</p>
+              <div>
+                {post.tags.map(tag => (
+                  <span
+                    key={tag}
+                    className="badge bg-primary me-1"
+                    style={{ fontSize: "0.75rem" }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
     </div>
   </Layout>
 )
